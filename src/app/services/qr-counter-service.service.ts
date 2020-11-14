@@ -7,7 +7,7 @@ import {formatNumber} from '@angular/common';
 })
 export class QrCounterServiceService {
 
-  private QrIds: string[] = ['613'];
+  private QrIds: string[] = ['613', '832', '464', '473', '338', '670', '887', '295'];
   private CookieString = 'QR_Count';
 
   public counter: EventEmitter<number> = new EventEmitter<number>();
