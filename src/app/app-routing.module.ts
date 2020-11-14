@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
 import {ContentControllerComponent} from './content-controller/content-controller.component';
 import {RewardComponent} from './reward/reward.component';
@@ -12,6 +12,7 @@ import {Station6Component} from './stations/station6/station6.component';
 import {Station7Component} from './stations/station7/station7.component';
 import {Station8Component} from './stations/station8/station8.component';
 import {MapComponent} from './map/map.component';
+import {StationguardGuard} from './stationguard.guard';
 
 
 @NgModule({
@@ -19,20 +20,22 @@ import {MapComponent} from './map/map.component';
   imports: [
     CommonModule,
     RouterModule.forRoot([
-      { path: '', component: ContentControllerComponent },
-      { path: 'reward', component: RewardComponent },
-      { path: 'station/1', component: Station1Component },
-      { path: 'station/2', component: Station2Component },
-      { path: 'station/3', component: Station3Component },
-      { path: 'station/4', component: Station4Component },
-      { path: 'station/5', component: Station5Component },
-      { path: 'station/6', component: Station6Component },
-      { path: 'station/7', component: Station7Component },
-      { path: 'station/8', component: Station8Component },
-      { path: 'map', component: MapComponent },
-      { path: 'QR/:id', component: ContentControllerComponent }
+      {path: '', component: ContentControllerComponent},
+      {path: 'reward', component: RewardComponent},
+      {path: 'station/1', component: Station1Component, canActivate: [StationguardGuard]},
+      {path: 'station/2', component: Station2Component, canActivate: [StationguardGuard]},
+      {path: 'station/3', component: Station3Component, canActivate: [StationguardGuard]},
+      {path: 'station/4', component: Station4Component, canActivate: [StationguardGuard]},
+      {path: 'station/5', component: Station5Component, canActivate: [StationguardGuard]},
+      {path: 'station/6', component: Station6Component, canActivate: [StationguardGuard]},
+      {path: 'station/7', component: Station7Component, canActivate: [StationguardGuard]},
+      {path: 'station/8', component: Station8Component, canActivate: [StationguardGuard]},
+      {path: 'map', component: MapComponent},
+      {path: 'QR/:id', component: ContentControllerComponent},
+      {path: '**', component: ContentControllerComponent}
     ])
   ],
-  exports: [ RouterModule ]
+  exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

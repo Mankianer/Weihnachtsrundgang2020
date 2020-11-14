@@ -10,7 +10,7 @@ import {QrCounterServiceService} from '../services/qr-counter-service.service';
 })
 export class ContentControllerComponent implements OnInit {
 
-  constructor(public cookieService: CookieService, private route: ActivatedRoute, private qrCounter: QrCounterServiceService) {
+  constructor(public cookieService: CookieService, private route: ActivatedRoute, public qrCounter: QrCounterServiceService) {
   }
 
   ngOnInit(): void {
