@@ -24,6 +24,7 @@ import { Station6Component } from './stations/station6/station6.component';
 import { Station7Component } from './stations/station7/station7.component';
 import { Station8Component } from './stations/station8/station8.component';
 import { MapComponent } from './map/map.component';
+import { DevComponent } from './dev/dev.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { MapComponent } from './map/map.component';
     Station6Component,
     Station7Component,
     Station8Component,
-    MapComponent
+    MapComponent,
+    DevComponent
   ],
   imports: [
     BrowserModule,

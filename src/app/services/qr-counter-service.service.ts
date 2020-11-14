@@ -28,10 +28,27 @@ export class QrCounterServiceService {
     if (this.QrIds.includes(id)) {
       if (!this.cookieService.check('QR_ID/' + id)) {
         this.cookieService.set('QR_ID/' + id, 'X', {path: '/'});
-        const qrCounter = this.cookieService.get(this.CookieString);
-        this.cookieService.set(this.CookieString, qrCounter + 'X', {path: '/'});
-        this.counter.emit((this.cookieService.get(this.CookieString).length));
+        this.addCounter();
       }
     }
+  }
+
+  public removeAllCookie(): void {
+    this.QrIds.forEach(id => {
+        this.cookieService.delete('QR_ID/' + id, '/');
+      }
+    );
+  }
+
+  public addCounter(): void {
+    const qrCounter = this.cookieService.get(this.CookieString);
+    this.cookieService.set(this.CookieString, qrCounter + 'X', {path: '/'});
+    this.counter.emit((this.cookieService.get(this.CookieString).length));
+  }
+
+  public subCounter(): void {
+    const qrCounter = this.cookieService.get(this.CookieString);
+    this.cookieService.set(this.CookieString, qrCounter.substr(0, qrCounter.length - 1), {path: '/'});
+    this.counter.emit((this.cookieService.get(this.CookieString).length));
   }
 }

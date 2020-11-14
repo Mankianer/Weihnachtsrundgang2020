@@ -13,6 +13,7 @@ import {Station7Component} from './stations/station7/station7.component';
 import {Station8Component} from './stations/station8/station8.component';
 import {MapComponent} from './map/map.component';
 import {StationguardGuard} from './stationguard.guard';
+import {DevComponent} from './dev/dev.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import {StationguardGuard} from './stationguard.guard';
       {path: 'station/6', component: Station6Component, canActivate: [StationguardGuard]},
       {path: 'station/7', component: Station7Component, canActivate: [StationguardGuard]},
       {path: 'station/8', component: Station8Component, canActivate: [StationguardGuard]},
+      {path: 'dev', component: DevComponent},
       {path: 'map', component: MapComponent},
       {path: 'QR/:id', component: ContentControllerComponent},
       {path: '**', component: ContentControllerComponent}
