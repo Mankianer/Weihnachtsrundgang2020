@@ -11,6 +11,7 @@ import {Station5Component} from './stations/station5/station5.component';
 import {Station6Component} from './stations/station6/station6.component';
 import {Station7Component} from './stations/station7/station7.component';
 import {Station8Component} from './stations/station8/station8.component';
+import {MapComponent} from './map/map.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import {Station8Component} from './stations/station8/station8.component';
       { path: 'station/6', component: Station6Component },
       { path: 'station/7', component: Station7Component },
       { path: 'station/8', component: Station8Component },
+      { path: 'map', component: MapComponent },
       { path: 'QR/:id', component: ContentControllerComponent }
     ])
   ],
