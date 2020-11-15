@@ -13,21 +13,39 @@ export class QrCounterServiceService {
   public counter: EventEmitter<number> = new EventEmitter<number>();
   public lastCounter: number;
 
+  private stationMap = new Map<string, boolean>();
+
   constructor(public cookieService: CookieService) {
-    console.log('XX' + JSON.stringify(this.cookieService.getAll()));
     this.counter.subscribe(n => this.lastCounter = n);
     if (!this.cookieService.check(this.CookieString)) {
       this.cookieService.set(this.CookieString, '', {path: '/'});
     }
     this.counter.emit((this.cookieService.get(this.CookieString).length));
-    console.log('SwS' + this.lastCounter);
+    this.syncStationViewed();
   }
 
+  private syncStationViewed(): void {
+
+  }
+
+  public setStationViewed(station: string, isViewed = true): void {
+    const name = 'isStationViewed:' + station;
+    if (isViewed) {
+      this.cookieService.set(name, 'X', {path: '/'});
+    } else {
+      this.cookieService.delete(name);
+    }
+  }
+
+  public isStationViewed(station: string): boolean {
+    const name = 'isStationViewed:' + station;
+    return this.cookieService.check(name);
+  }
 
   public addID(id: string): void {
     if (this.QrIds.includes(id)) {
-      if (!this.cookieService.check('QR_ID/' + id)) {
-        this.cookieService.set('QR_ID/' + id, 'X', {path: '/'});
+      if (!this.cookieService.check('QR_ID:' + id)) {
+        this.cookieService.set('QR_ID:' + id, 'X', {path: '/'});
         this.addCounter();
       }
     }
