@@ -13,20 +13,14 @@ export class QrCounterServiceService {
   public counter: EventEmitter<number> = new EventEmitter<number>();
   public lastCounter: number;
 
-  private stationMap = new Map<string, boolean>();
-
   constructor(public cookieService: CookieService) {
     this.counter.subscribe(n => this.lastCounter = n);
     if (!this.cookieService.check(this.CookieString)) {
       this.cookieService.set(this.CookieString, '', {path: '/'});
     }
     this.counter.emit((this.cookieService.get(this.CookieString).length));
-    this.syncStationViewed();
   }
 
-  private syncStationViewed(): void {
-
-  }
 
   public setStationViewed(station: string, isViewed = true): void {
     const name = 'isStationViewed:' + station;

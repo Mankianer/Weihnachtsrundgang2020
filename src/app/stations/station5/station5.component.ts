@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {QrCounterServiceService} from '../../services/qr-counter-service.service';
 
 @Component({
   selector: 'app-station5',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Station5Component implements OnInit {
 
-  constructor() { }
+  constructor(public qrCounter: QrCounterServiceService) { }
 
   ngOnInit(): void {
+    this.qrCounter.setStationViewed('5');
   }
+
 
 }
