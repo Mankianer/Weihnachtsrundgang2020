@@ -21,7 +21,6 @@ export class QrCounterServiceService {
     this.counter.emit((this.cookieService.get(this.CookieString).length));
   }
 
-
   public setStationViewed(station: string, isViewed = true): void {
     const name = 'isStationViewed:' + station;
     if (isViewed) {

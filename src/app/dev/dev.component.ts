@@ -13,4 +13,11 @@ export class DevComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public removeCookies(): void {
+    this.qrCounter.removeAllCookie();
+    for (let i = 1; i < 9; i++) {
+      this.qrCounter.setStationViewed('' + i, false);
+    }
+  }
+
 }
