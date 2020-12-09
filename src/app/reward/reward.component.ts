@@ -11,6 +11,7 @@ export class RewardComponent implements OnInit {
   constructor( public qrCounter: QrCounterServiceService) { }
 
   ngOnInit(): void {
+    this.qrCounter.updateNewStationForReward(false);
   }
 
 }

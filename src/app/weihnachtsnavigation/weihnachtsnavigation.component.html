@@ -4,7 +4,7 @@
                [mode]="(isHandset$ | async) ? 'over' : 'side'"
                [opened]="(isHandset$ | async) === false">
     <mat-toolbar>
-      <span matBadge="🎄" matBadgeOverlap="false"
+      <span matBadge="1" matBadgeOverlap="false"
             [matBadgeHidden]="isAnyStationViewed()">Menu</span>
     </mat-toolbar>
     <mat-nav-list>
@@ -32,7 +32,8 @@
       <a mat-list-item href="station/8" *ngIf="qrCounter.lastCounter >= 8 " (click)="qrCounter.setStationViewed('8')">
         <span matBadge="🎄" matBadgeOverlap="false"
               [matBadgeHidden]="qrCounter.isStationViewed('8')">Station 8</span></a>
-      <a mat-list-item href="reward">Belohnung</a>
+      <a mat-list-item href="reward"><span matBadge="1" matBadgeOverlap="false"
+                                           [matBadgeHidden]="qrCounter.isNewStationForReward()">Belohnung</span></a>
       <a mat-list-item href="map">Karte</a>
       <a mat-list-item href="dev">Dev</a>
       <div style="bottom: 0; position: absolute; width: 100%">

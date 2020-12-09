@@ -23,8 +23,11 @@ export class WeihnachtsnavigationComponent {
   }
 
   public isAnyStationViewed(): boolean {
+    if (this.qrCounter.isNewStationForReward()) {
+      return true;
+    }
     for (let i = 1; i <= this.qrCounter.lastCounter; i++) {
-      if (!this.qrCounter.isStationViewed('' + i)){
+      if (!this.qrCounter.isStationViewed('' + i)) {
         return false;
       }
     }

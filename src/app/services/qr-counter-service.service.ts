@@ -40,11 +40,24 @@ export class QrCounterServiceService {
     return this.cookieService.check(name);
   }
 
+  public isNewStationForReward(): boolean {
+    return !this.cookieService.check('NewStationForReward');
+  }
+
+  public updateNewStationForReward(neu: boolean): void {
+    if (neu) {
+      this.cookieService.set('NewStationForReward', 'X', {path: '/', expires: new Date(2021, 2, 28)});
+    } else {
+      this.cookieService.delete('NewStationForReward', '/');
+    }
+  }
+
   public addID(id: string): void {
     if (this.QrIds.includes(id)) {
       if (!this.cookieService.check('QR_ID:' + id)) {
         this.cookieService.set('QR_ID:' + id, 'X', {path: '/', expires: new Date(2021, 2, 28)});
         this.addCounter();
+        this.updateNewStationForReward(true);
       }
     }
   }
