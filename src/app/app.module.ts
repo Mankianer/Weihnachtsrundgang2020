@@ -26,6 +26,7 @@ import { Station8Component } from './stations/station8/station8.component';
 import { MapComponent } from './map/map.component';
 import { DevComponent } from './dev/dev.component';
 import {MatBadgeModule} from '@angular/material/badge';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import {MatBadgeModule} from '@angular/material/badge';
     MatIconModule,
     MatListModule,
     RouterModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatGridListModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]

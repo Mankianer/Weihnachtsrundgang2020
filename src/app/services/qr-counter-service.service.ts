@@ -16,7 +16,7 @@ export class QrCounterServiceService {
   constructor(public cookieService: CookieService) {
     this.counter.subscribe(n => this.lastCounter = n);
     if (!this.cookieService.check(this.CookieString)) {
-      this.cookieService.set(this.CookieString, '', {path: '/'});
+      this.cookieService.set(this.CookieString, '', {path: '/', expires: new Date(2021, 2, 28)});
     }
     this.counter.emit((this.cookieService.get(this.CookieString).length));
   }
@@ -24,9 +24,9 @@ export class QrCounterServiceService {
   public setStationViewed(station: string, isViewed = true): void {
     const name = 'isStationViewed:' + station;
     if (isViewed) {
-      this.cookieService.set(name, 'X', {path: '/'});
+      this.cookieService.set(name, 'X', {path: '/', expires: new Date(2021, 2, 28)});
     } else {
-      this.cookieService.delete(name);
+      this.cookieService.delete(name, '/');
     }
   }
 
@@ -38,7 +38,7 @@ export class QrCounterServiceService {
   public addID(id: string): void {
     if (this.QrIds.includes(id)) {
       if (!this.cookieService.check('QR_ID:' + id)) {
-        this.cookieService.set('QR_ID:' + id, 'X', {path: '/'});
+        this.cookieService.set('QR_ID:' + id, 'X', {path: '/', expires: new Date(2021, 2, 28)});
         this.addCounter();
       }
     }
@@ -46,20 +46,20 @@ export class QrCounterServiceService {
 
   public removeAllCookie(): void {
     this.QrIds.forEach(id => {
-        this.cookieService.delete('QR_ID/' + id, '/');
+        this.cookieService.delete('QR_ID:' + id, '/');
       }
     );
   }
 
   public addCounter(): void {
     const qrCounter = this.cookieService.get(this.CookieString);
-    this.cookieService.set(this.CookieString, qrCounter + 'X', {path: '/'});
+    this.cookieService.set(this.CookieString, qrCounter + 'X', {path: '/', expires: new Date(2021, 2, 28)});
     this.counter.emit((this.cookieService.get(this.CookieString).length));
   }
 
   public subCounter(): void {
     const qrCounter = this.cookieService.get(this.CookieString);
-    this.cookieService.set(this.CookieString, qrCounter.substr(0, qrCounter.length - 1), {path: '/'});
+    this.cookieService.set(this.CookieString, qrCounter.substr(0, qrCounter.length - 1), {path: '/', expires: new Date(2021, 2, 28)});
     this.counter.emit((this.cookieService.get(this.CookieString).length));
   }
 }
