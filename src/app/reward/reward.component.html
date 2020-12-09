@@ -1,12 +1,16 @@
 <h1>Belohnung</h1>
 <mat-grid-list cols="3" rowHeight="1:1">
-  <mat-grid-tile><img src="assets/reward/1.png"></mat-grid-tile>
-  <mat-grid-tile><img src="assets/reward/2.png"></mat-grid-tile>
-  <mat-grid-tile><img src="assets/reward/3.png"></mat-grid-tile>
-  <mat-grid-tile><img src="assets/reward/4.png"></mat-grid-tile>
-  <mat-grid-tile><img src="assets/reward/5.png"></mat-grid-tile>
-  <mat-grid-tile><img src="assets/reward/6.png"></mat-grid-tile>
-  <mat-grid-tile><img src="assets/reward/7.png"></mat-grid-tile>
-  <mat-grid-tile><img src="assets/reward/8.png"></mat-grid-tile>
-  <mat-grid-tile><img src="assets/reward/9.png"></mat-grid-tile>
+
+  <mat-grid-tile *ngFor="let a of [1,2,3,4,5,6,7,8,9]; let i = index">
+    <img src="assets/reward/{{a}}.png" *ngIf="qrCounter.isStation(a)">
+    <img src="assets/reward/x.png" *ngIf="!qrCounter.isStation(a)">
+  </mat-grid-tile>
+  <!--  <mat-grid-tile><img src="assets/reward/2.png"></mat-grid-tile>-->
+  <!--  <mat-grid-tile><img src="assets/reward/3.png"></mat-grid-tile>-->
+  <!--  <mat-grid-tile><img src="assets/reward/4.png"></mat-grid-tile>-->
+  <!--  <mat-grid-tile><img src="assets/reward/5.png"></mat-grid-tile>-->
+  <!--  <mat-grid-tile><img src="assets/reward/6.png"></mat-grid-tile>-->
+  <!--  <mat-grid-tile><img src="assets/reward/7.png"></mat-grid-tile>-->
+  <!--  <mat-grid-tile><img src="assets/reward/8.png"></mat-grid-tile>-->
+  <!--  <mat-grid-tile><img src="assets/reward/9.png"></mat-grid-tile>-->
 </mat-grid-list>

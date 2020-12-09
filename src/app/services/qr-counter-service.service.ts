@@ -35,6 +35,11 @@ export class QrCounterServiceService {
     return this.cookieService.check(name);
   }
 
+  public isStation(station: number): boolean {
+    const name = 'QR_ID:' + this.QrIds[station - 1];
+    return this.cookieService.check(name);
+  }
+
   public addID(id: string): void {
     if (this.QrIds.includes(id)) {
       if (!this.cookieService.check('QR_ID:' + id)) {
