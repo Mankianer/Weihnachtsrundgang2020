@@ -28,6 +28,11 @@ import { DevComponent } from './dev/dev.component';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { Station2v2Component } from './stations/station2v2/station2v2.component';
+import {MatRippleModule} from '@angular/material/core';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { Station2v3Component } from './stations/station2v3/station2v3.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +50,9 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     Station8Component,
     MapComponent,
     DevComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    Station2v2Component,
+    Station2v3Component
   ],
   imports: [
     BrowserModule,
@@ -59,7 +66,10 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     MatListModule,
     RouterModule,
     MatBadgeModule,
-    MatGridListModule
+    MatGridListModule,
+    MatRippleModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]

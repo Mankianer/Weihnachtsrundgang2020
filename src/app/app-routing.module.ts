@@ -15,6 +15,8 @@ import {MapComponent} from './map/map.component';
 import {StationguardGuard} from './stationguard.guard';
 import {DevComponent} from './dev/dev.component';
 import {LandingPageComponent} from './landing-page/landing-page.component';
+import {Station2v2Component} from './stations/station2v2/station2v2.component';
+import {Station2v3Component} from './stations/station2v3/station2v3.component';
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import {LandingPageComponent} from './landing-page/landing-page.component';
       {path: 'reward', component: RewardComponent},
       {path: 'station/1', component: Station1Component, canActivate: [StationguardGuard]},
       {path: 'station/2', component: Station2Component, canActivate: [StationguardGuard]},
+      {path: 'station/2/2', component: Station2v2Component, canActivate: [StationguardGuard]},
+      {path: 'station/2/3', component: Station2v3Component, canActivate: [StationguardGuard]},
       {path: 'station/3', component: Station3Component, canActivate: [StationguardGuard]},
       {path: 'station/4', component: Station4Component, canActivate: [StationguardGuard]},
       {path: 'station/5', component: Station5Component, canActivate: [StationguardGuard]},
