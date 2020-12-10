@@ -27,6 +27,7 @@ import { MapComponent } from './map/map.component';
 import { DevComponent } from './dev/dev.component';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     Station7Component,
     Station8Component,
     MapComponent,
-    DevComponent
+    DevComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,

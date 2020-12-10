@@ -21,6 +21,14 @@ export class QrCounterServiceService {
     this.counter.emit((this.cookieService.get(this.CookieString).length));
   }
 
+  public isLandingPageViewed(): boolean {
+    return this.cookieService.check('LandingPageViewed');
+  }
+
+  public setLandingPageViewed(): void {
+    return this.cookieService.set('LandingPageViewed', 'X', {path: '/', expires: new Date(2021, 2, 28)});
+  }
+
   public setStationViewed(station: string, isViewed = true): void {
     const name = 'isStationViewed:' + station;
     if (isViewed) {

@@ -1,0 +1,478 @@
+.mediaViewInfo {
+  --web-view-name: Station 03_01;
+  --web-view-id: Station_03_01;
+  --web-scale-to-fit: true;
+  --web-scale-to-fit-type: width;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+:root {
+  --web-view-ids: Station_03_01;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+#Station_03_01 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 736px;
+  background-color: rgba(255,255,255,1);
+  overflow: scroll;
+  --web-view-name: Station 03_01;
+  --web-view-id: Station_03_01;
+  --web-scale-to-fit: true;
+  --web-scale-to-fit-type: width;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+#Rechteck_1_v {
+  fill: url(#Rechteck_1_v);
+  width: 100%;
+  height: 100%;
+}
+.Rechteck_1_v {
+  position: absolute;
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  left: 0.371px;
+  top: 0.027px;
+}
+#Und_es_waren_Hirten_in_derselb {
+  left: 190.153px;
+  top: 91.432px;
+  position: absolute;
+  overflow: visible;
+  width: 167.847px;
+  height: 197.95420837402344px;
+  line-height: 18px;
+  margin-top: -2px;
+  text-align: left;
+  font-family: American Typewriter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(22,22,21,1);
+}
+#Gruppe_1 {
+  position: absolute;
+  width: 34px;
+  height: 25px;
+  left: 23px;
+  top: 35px;
+  overflow: visible;
+}
+#Rechteck_2 {
+  fill: rgba(75,108,115,1);
+}
+.Rechteck_2 {
+  position: absolute;
+  overflow: visible;
+  width: 34px;
+  height: 5px;
+  left: 0px;
+  top: 0px;
+}
+#Rechteck_7 {
+  fill: rgba(75,108,115,1);
+}
+.Rechteck_7 {
+  position: absolute;
+  overflow: visible;
+  width: 34px;
+  height: 5px;
+  left: 0px;
+  top: 10px;
+}
+#Rechteck_6 {
+  fill: rgba(75,108,115,1);
+}
+.Rechteck_6 {
+  position: absolute;
+  overflow: visible;
+  width: 34px;
+  height: 5px;
+  left: 0px;
+  top: 20px;
+}
+#Pfad_1 {
+  fill: rgba(5,78,88,1);
+}
+.Pfad_1 {
+  overflow: visible;
+  position: absolute;
+  width: 300px;
+  height: 188.306px;
+  left: 57px;
+  top: 286px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#SCHAF {
+  left: 53px;
+  top: 80.208px;
+  position: absolute;
+  overflow: visible;
+  width: 49.311px;
+  height: 25.707454681396484px;
+  text-align: center;
+  font-family: Nunito-Italic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(22,22,21,1);
+}
+#Rechteck_14 {
+  fill: rgba(5,78,88,1);
+}
+.Rechteck_14 {
+  position: absolute;
+  overflow: visible;
+  width: 300px;
+  height: 52px;
+  left: 57px;
+  top: 523px;
+}
+#Rechteck_15 {
+  fill: rgba(5,78,88,1);
+}
+.Rechteck_15 {
+  position: absolute;
+  overflow: visible;
+  width: 300px;
+  height: 52px;
+  left: 57px;
+  top: 587px;
+}
+#ERWACHSENE {
+  left: 57px;
+  top: 540px;
+  position: absolute;
+  overflow: visible;
+  width: 301px;
+  white-space: nowrap;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Station_03_02.html;
+  cursor: pointer;
+  text-align: center;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: rgba(255,255,255,1);
+}
+#KINDER {
+  left: 57px;
+  top: 605px;
+  position: absolute;
+  overflow: visible;
+  width: 301px;
+  white-space: nowrap;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Station_03_03.html;
+  cursor: pointer;
+  text-align: center;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: rgba(255,255,255,1);
+}
+#Mh_mh_So_gut_dass_da_jemand_au {
+  left: 76px;
+  top: 341px;
+  position: absolute;
+  overflow: visible;
+  width: 263px;
+  line-height: 16px;
+  margin-top: -0.5px;
+  text-align: left;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: rgba(255,255,255,1);
+}
+#Gruppe_97 {
+  position: absolute;
+  width: 119.409px;
+  height: 167.179px;
+  left: 57px;
+  top: 106px;
+  overflow: visible;
+}
+#Pfad_14 {
+  fill: rgba(92,56,25,1);
+}
+.Pfad_14 {
+  overflow: visible;
+  position: absolute;
+  width: 55.011px;
+  height: 47.818px;
+  left: 64.399px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_13 {
+  fill: rgba(92,56,25,1);
+}
+.Pfad_13 {
+  overflow: visible;
+  position: absolute;
+  width: 55.16px;
+  height: 47.783px;
+  left: 0px;
+  top: 0.051px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Ellipse_24 {
+  fill: rgba(255,255,255,1);
+}
+.Ellipse_24 {
+  position: absolute;
+  overflow: visible;
+  width: 117.758px;
+  height: 102.014px;
+  left: 0.273px;
+  top: 46.89px;
+}
+#Pfad_11 {
+  fill: rgba(30,30,30,1);
+}
+.Pfad_11 {
+  overflow: visible;
+  position: absolute;
+  width: 6.113px;
+  height: 19.831px;
+  left: 85.599px;
+  top: 139.674px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_12 {
+  fill: rgba(43,43,43,1);
+}
+.Pfad_12 {
+  overflow: visible;
+  position: absolute;
+  width: 6.028px;
+  height: 19.749px;
+  left: 28.163px;
+  top: 140.748px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_79 {
+  fill: rgba(229,229,229,1);
+}
+.Pfad_79 {
+  overflow: visible;
+  position: absolute;
+  width: 117.758px;
+  height: 52.571px;
+  left: 0.526px;
+  top: 96.276px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Gruppe_93 {
+  position: absolute;
+  width: 55.154px;
+  height: 40.535px;
+  left: 0.006px;
+  top: 0.019px;
+  overflow: visible;
+}
+#Pfad_80 {
+  fill: rgba(59,35,18,1);
+}
+.Pfad_80 {
+  overflow: visible;
+  position: absolute;
+  width: 55.154px;
+  height: 30.701px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_81 {
+  fill: rgba(59,35,18,1);
+}
+.Pfad_81 {
+  overflow: visible;
+  position: absolute;
+  width: 22.341px;
+  height: 17.29px;
+  left: 14.663px;
+  top: 17.389px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_82 {
+  fill: rgba(59,35,18,1);
+}
+.Pfad_82 {
+  overflow: visible;
+  position: absolute;
+  width: 18.069px;
+  height: 13.839px;
+  left: 10.578px;
+  top: 26.696px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Gruppe_94 {
+  position: absolute;
+  width: 54.995px;
+  height: 40.572px;
+  left: 64.399px;
+  top: 0.007px;
+  overflow: visible;
+}
+#Pfad_83 {
+  fill: rgba(59,35,18,1);
+}
+.Pfad_83 {
+  overflow: visible;
+  position: absolute;
+  width: 54.995px;
+  height: 30.638px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_84 {
+  fill: rgba(59,35,18,1);
+}
+.Pfad_84 {
+  overflow: visible;
+  position: absolute;
+  width: 22.477px;
+  height: 16.843px;
+  left: 18.029px;
+  top: 17.329px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_85 {
+  fill: rgba(59,35,18,1);
+}
+.Pfad_85 {
+  overflow: visible;
+  position: absolute;
+  width: 17.95px;
+  height: 13.534px;
+  left: 26.35px;
+  top: 27.038px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_15 {
+  fill: rgba(30,30,30,1);
+}
+.Pfad_15 {
+  overflow: visible;
+  position: absolute;
+  width: 6.091px;
+  height: 22.344px;
+  left: 74.237px;
+  top: 144.835px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_16 {
+  fill: rgba(43,43,43,1);
+}
+.Pfad_16 {
+  overflow: visible;
+  position: absolute;
+  width: 6.062px;
+  height: 22.394px;
+  left: 39.385px;
+  top: 144.781px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Gruppe_7 {
+  position: absolute;
+  width: 83.898px;
+  height: 78.904px;
+  left: 17.412px;
+  top: 44.782px;
+  overflow: visible;
+}
+#Gruppe_96 {
+  position: absolute;
+  width: 83.898px;
+  height: 78.904px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Gruppe_95 {
+  position: absolute;
+  width: 83.898px;
+  height: 78.904px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Gruppe_8 {
+  position: absolute;
+  width: 15.019px;
+  height: 9.22px;
+  left: 53.891px;
+  top: 74.098px;
+  overflow: visible;
+}
+#Ellipse_25 {
+  fill: rgba(17,18,17,1);
+}
+.Ellipse_25 {
+  position: absolute;
+  overflow: visible;
+  width: 5.268px;
+  height: 9.22px;
+  left: 0px;
+  top: 0px;
+}
+#Ellipse_26 {
+  fill: rgba(17,18,17,1);
+}
+.Ellipse_26 {
+  position: absolute;
+  overflow: visible;
+  width: 5.268px;
+  height: 9.22px;
+  left: 9.751px;
+  top: 0px;
+}
+#Ellipse_27 {
+  fill: rgba(255,255,255,1);
+}
+.Ellipse_27 {
+  position: absolute;
+  overflow: visible;
+  width: 42.276px;
+  height: 28.054px;
+  left: 40.392px;
+  top: 29.671px;
+}
+#Pfad_87 {
+  fill: rgba(229,229,229,1);
+}
+.Pfad_87 {
+  overflow: visible;
+  position: absolute;
+  width: 42.276px;
+  height: 15.006px;
+  left: 40.392px;
+  top: 29.698px;
+  transform: matrix(1,0,0,1,0,0);
+}

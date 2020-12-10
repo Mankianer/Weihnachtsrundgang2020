@@ -1,0 +1,506 @@
+.mediaViewInfo {
+  --web-view-name: Station 07_01;
+  --web-view-id: Station_07_01;
+  --web-scale-to-fit: true;
+  --web-scale-to-fit-type: width;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+:root {
+  --web-view-ids: Station_07_01;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+#Station_07_01 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 736px;
+  background-color: rgba(255,255,255,1);
+  overflow: scroll;
+  --web-view-name: Station 07_01;
+  --web-view-id: Station_07_01;
+  --web-scale-to-fit: true;
+  --web-scale-to-fit-type: width;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+#Rechteck_1_v {
+  fill: url(#Rechteck_1_v);
+  width: 100%;
+  height: 100%;
+}
+.Rechteck_1_v {
+  position: absolute;
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  left: 0.371px;
+  top: 0.027px;
+}
+#Maria_aber_behielt_alle_diese_ {
+  left: 207.153px;
+  top: 91.432px;
+  position: absolute;
+  overflow: visible;
+  width: 167.847px;
+  height: 197.95420837402344px;
+  line-height: 18px;
+  margin-top: -2px;
+  text-align: left;
+  font-family: American Typewriter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(22,22,21,1);
+}
+#Gruppe_1 {
+  position: absolute;
+  width: 34px;
+  height: 25px;
+  left: 23px;
+  top: 35px;
+  overflow: visible;
+}
+#Rechteck_2 {
+  fill: rgba(75,108,115,1);
+}
+.Rechteck_2 {
+  position: absolute;
+  overflow: visible;
+  width: 34px;
+  height: 5px;
+  left: 0px;
+  top: 0px;
+}
+#Rechteck_7 {
+  fill: rgba(75,108,115,1);
+}
+.Rechteck_7 {
+  position: absolute;
+  overflow: visible;
+  width: 34px;
+  height: 5px;
+  left: 0px;
+  top: 10px;
+}
+#Rechteck_6 {
+  fill: rgba(75,108,115,1);
+}
+.Rechteck_6 {
+  position: absolute;
+  overflow: visible;
+  width: 34px;
+  height: 5px;
+  left: 0px;
+  top: 20px;
+}
+#Pfad_1 {
+  fill: rgba(5,78,88,1);
+}
+.Pfad_1 {
+  overflow: visible;
+  position: absolute;
+  width: 300px;
+  height: 159.509px;
+  left: 57px;
+  top: 286px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#MARIA {
+  left: 32.899px;
+  top: 78.208px;
+  position: absolute;
+  overflow: visible;
+  width: 87.311px;
+  height: 25.707454681396484px;
+  text-align: center;
+  font-family: Nunito-Italic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(22,22,21,1);
+}
+#Was_fr_seltsame_Dinge_geschehe {
+  left: 76px;
+  top: 339px;
+  position: absolute;
+  overflow: visible;
+  width: 263px;
+  line-height: 16px;
+  margin-top: -0.5px;
+  text-align: left;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: rgba(255,255,255,1);
+}
+#Rechteck_15 {
+  fill: rgba(5,78,88,1);
+}
+.Rechteck_15 {
+  position: absolute;
+  overflow: visible;
+  width: 300px;
+  height: 52px;
+  left: 57px;
+  top: 506px;
+}
+#Rechteck_16 {
+  fill: rgba(5,78,88,1);
+}
+.Rechteck_16 {
+  position: absolute;
+  overflow: visible;
+  width: 300px;
+  height: 52px;
+  left: 57px;
+  top: 570px;
+}
+#HREN {
+  left: 57px;
+  top: 524px;
+  position: absolute;
+  overflow: visible;
+  width: 301px;
+  white-space: nowrap;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Station_07_02.html;
+  cursor: pointer;
+  text-align: center;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: rgba(255,255,255,1);
+}
+#SEHEN {
+  left: 57px;
+  top: 588px;
+  position: absolute;
+  overflow: visible;
+  width: 301px;
+  white-space: nowrap;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Station_07_03.html;
+  cursor: pointer;
+  text-align: center;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: rgba(255,255,255,1);
+}
+#Gruppe_147 {
+  position: absolute;
+  width: 157.753px;
+  height: 145.757px;
+  left: 49px;
+  top: 110px;
+  overflow: visible;
+}
+#Gruppe_54 {
+  position: absolute;
+  width: 157.753px;
+  height: 145.757px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Ellipse_57 {
+  fill: rgba(47,28,16,1);
+}
+.Ellipse_57 {
+  position: absolute;
+  overflow: visible;
+  width: 63.046px;
+  height: 63.046px;
+  left: 94.707px;
+  top: 46.927px;
+}
+#Ellipse_58 {
+  fill: rgba(47,28,16,1);
+}
+.Ellipse_58 {
+  position: absolute;
+  overflow: visible;
+  width: 63.046px;
+  height: 63.046px;
+  left: 0px;
+  top: 46.927px;
+}
+#Gruppe_47 {
+  position: absolute;
+  width: 126.52px;
+  height: 22.828px;
+  left: 16.084px;
+  top: 54.943px;
+  overflow: visible;
+}
+#Gruppe_45 {
+  position: absolute;
+  width: 22.828px;
+  height: 22.828px;
+  left: 103.692px;
+  top: 0px;
+  overflow: visible;
+}
+#Ellipse_59 {
+  fill: rgba(233,197,162,1);
+}
+.Ellipse_59 {
+  position: absolute;
+  overflow: visible;
+  width: 22.828px;
+  height: 22.828px;
+  left: 0px;
+  top: 0px;
+}
+#Ellipse_60 {
+  fill: rgba(235,189,146,1);
+}
+.Ellipse_60 {
+  position: absolute;
+  overflow: visible;
+  width: 14.962px;
+  height: 14.962px;
+  left: 3.933px;
+  top: 3.933px;
+}
+#Gruppe_46 {
+  position: absolute;
+  width: 22.828px;
+  height: 22.828px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Ellipse_61 {
+  fill: rgba(233,197,162,1);
+}
+.Ellipse_61 {
+  position: absolute;
+  overflow: visible;
+  width: 22.828px;
+  height: 22.828px;
+  left: 0px;
+  top: 0px;
+}
+#Ellipse_62 {
+  fill: rgba(235,189,146,1);
+}
+.Ellipse_62 {
+  position: absolute;
+  overflow: visible;
+  width: 14.962px;
+  height: 14.962px;
+  left: 3.933px;
+  top: 3.933px;
+}
+#Gruppe_49 {
+  position: absolute;
+  width: 101.047px;
+  height: 118.649px;
+  left: 28.187px;
+  top: 9.47px;
+  overflow: visible;
+}
+#Gruppe_144 {
+  position: absolute;
+  width: 101.047px;
+  height: 118.649px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Gruppe_143 {
+  position: absolute;
+  width: 101.047px;
+  height: 118.649px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Gruppe_50 {
+  position: absolute;
+  width: 8.803px;
+  height: 3.738px;
+  left: 73.247px;
+  top: 83.822px;
+  overflow: visible;
+}
+#Ellipse_63 {
+  fill: rgba(230,98,60,1);
+}
+.Ellipse_63 {
+  position: absolute;
+  overflow: visible;
+  width: 3.738px;
+  height: 3.738px;
+  left: 0px;
+  top: 0px;
+}
+#Ellipse_64 {
+  fill: rgba(200,81,51,1);
+}
+.Ellipse_64 {
+  position: absolute;
+  overflow: visible;
+  width: 3.738px;
+  height: 3.738px;
+  left: 5.065px;
+  top: 0px;
+}
+#Gruppe_51 {
+  position: absolute;
+  width: 43.127px;
+  height: 8.64px;
+  left: 56.955px;
+  top: 62.828px;
+  overflow: visible;
+}
+#Ellipse_65 {
+  fill: rgba(17,18,17,1);
+}
+.Ellipse_65 {
+  position: absolute;
+  overflow: visible;
+  width: 8.64px;
+  height: 8.64px;
+  left: 0px;
+  top: 0px;
+}
+#Ellipse_66 {
+  fill: rgba(17,18,17,1);
+}
+.Ellipse_66 {
+  position: absolute;
+  overflow: visible;
+  width: 8.64px;
+  height: 8.64px;
+  left: 34.487px;
+  top: 0px;
+}
+#Pfad_43 {
+  fill: rgba(77,41,13,1);
+}
+.Pfad_43 {
+  overflow: visible;
+  position: absolute;
+  width: 56.958px;
+  height: 57.95px;
+  left: 23.138px;
+  top: 0.087px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_44 {
+  fill: rgba(77,41,13,1);
+}
+.Pfad_44 {
+  overflow: visible;
+  position: absolute;
+  width: 69.906px;
+  height: 55.24px;
+  left: 67.287px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_45 {
+  fill: rgba(77,41,13,1);
+}
+.Pfad_45 {
+  overflow: visible;
+  position: absolute;
+  width: 14.071px;
+  height: 38.618px;
+  left: 69.794px;
+  top: 12.565px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_46 {
+  fill: rgba(77,41,13,1);
+}
+.Pfad_46 {
+  overflow: visible;
+  position: absolute;
+  width: 15.244px;
+  height: 94.583px;
+  left: 18.781px;
+  top: 49.513px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_47 {
+  fill: rgba(77,41,13,1);
+}
+.Pfad_47 {
+  overflow: visible;
+  position: absolute;
+  width: 15.246px;
+  height: 94.585px;
+  left: 123.707px;
+  top: 51.171px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Gruppe_53 {
+  position: absolute;
+  width: 29.06px;
+  height: 10.71px;
+  left: 63.103px;
+  top: 100.384px;
+  overflow: visible;
+}
+#Gruppe_146 {
+  position: absolute;
+  width: 29.06px;
+  height: 10.71px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Gruppe_145 {
+  position: absolute;
+  width: 29.06px;
+  height: 10.71px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Rechteck_103 {
+  fill: rgba(77,41,13,1);
+}
+.Rechteck_103 {
+  width: 14.258px;
+  height: 2.751px;
+  position: absolute;
+  overflow: visible;
+  transform: translate(-108.384px, -369.627px) matrix(1,0,0,1,160.957,420.2601) rotate(-10.012deg);
+  transform-origin: center;
+}
+#Rechteck_104 {
+  fill: rgba(77,41,13,1);
+}
+.Rechteck_104 {
+  width: 14.258px;
+  height: 2.751px;
+  position: absolute;
+  overflow: visible;
+  transform: translate(-108.384px, -369.627px) matrix(1,0,0,1,198.4648,420.7007) rotate(7.009deg);
+  transform-origin: center;
+}

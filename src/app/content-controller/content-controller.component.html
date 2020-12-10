@@ -1,4 +1,6 @@
 <div *ngIf="qrCounter.lastCounter === 0">Sammel QR Codes um die Nächste Station frei zu schalten!</div>
+<app-landing-page *ngIf="!qrCounter.isLandingPageViewed()"></app-landing-page>
+<div *ngIf="qrCounter.isLandingPageViewed()">
 <app-station1 *ngIf="qrCounter.lastCounter === 1"></app-station1>
 <app-station2 *ngIf="qrCounter.lastCounter === 2"></app-station2>
 <app-station3 *ngIf="qrCounter.lastCounter === 3"></app-station3>
@@ -7,3 +9,4 @@
 <app-station6 *ngIf="qrCounter.lastCounter === 6"></app-station6>
 <app-station7 *ngIf="qrCounter.lastCounter === 7"></app-station7>
 <app-station8 *ngIf="qrCounter.lastCounter === 8"></app-station8>
+</div>

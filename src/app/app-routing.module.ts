@@ -14,6 +14,7 @@ import {Station8Component} from './stations/station8/station8.component';
 import {MapComponent} from './map/map.component';
 import {StationguardGuard} from './stationguard.guard';
 import {DevComponent} from './dev/dev.component';
+import {LandingPageComponent} from './landing-page/landing-page.component';
 
 
 @NgModule({
@@ -21,7 +22,7 @@ import {DevComponent} from './dev/dev.component';
   imports: [
     CommonModule,
     RouterModule.forRoot([
-      {path: '', component: ContentControllerComponent},
+      {path: '', component: LandingPageComponent},
       {path: 'reward', component: RewardComponent},
       {path: 'station/1', component: Station1Component, canActivate: [StationguardGuard]},
       {path: 'station/2', component: Station2Component, canActivate: [StationguardGuard]},
@@ -33,6 +34,7 @@ import {DevComponent} from './dev/dev.component';
       {path: 'station/8', component: Station8Component, canActivate: [StationguardGuard]},
       {path: 'dev', component: DevComponent},
       {path: 'map', component: MapComponent},
+      {path: 'landing', component: LandingPageComponent},
       {path: 'QR/:id', component: ContentControllerComponent},
       {path: '**', component: ContentControllerComponent}
     ])
