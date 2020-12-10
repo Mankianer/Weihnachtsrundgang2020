@@ -1,3 +1,17 @@
 <div style="height: 35px"></div>
-<p>landing-page works!</p>
-<a *ngIf="qrCounter.lastCounter > 0" mat-raised-button href="/station/1">Zu Station 1</a>
+<div style="margin-left: 15px; text-align: center;">
+  <h3>Persönliche Weihnachten um den Phoenix-See</h3>
+  <p>Gemeinsam unterwegs mit Personen aus der Weihnachtsgeschichte
+    einmal um den See herum</p>
+  <p>presented by Evangelische Jugend Hörde und Schüren</p>
+  <br/>
+  <br/>
+  <br/>
+  <a *ngIf="qrCounter.lastCounter >= 1" mat-flat-button href="/station/1"
+     (click)="qrCounter.setLandingPageViewed();" style="background-color: rgba(5,78,88,1); color: white;">Zu Station 1</a>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <button mat-flat-button *ngIf="qrCounter.lastCounter >= 1" color="warn" (click)="cookieService.deleteAll('/')">Fortschritt löschen</button>
+</div>

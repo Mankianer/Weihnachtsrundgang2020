@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {QrCounterServiceService} from '../services/qr-counter-service.service';
+import {CookieService} from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-dev',
@@ -8,16 +9,17 @@ import {QrCounterServiceService} from '../services/qr-counter-service.service';
 })
 export class DevComponent implements OnInit {
 
-  constructor(public qrCounter: QrCounterServiceService) { }
+  constructor(public qrCounter: QrCounterServiceService, public cookieService: CookieService) { }
 
   ngOnInit(): void {
   }
 
   public removeCookies(): void {
-    this.qrCounter.removeAllCookie();
-    for (let i = 1; i < 9; i++) {
-      this.qrCounter.setStationViewed('' + i, false);
-    }
+    this.cookieService.deleteAll('/');
+    // this.qrCounter.removeAllCookie();
+    // for (let i = 1; i < 9; i++) {
+    //   this.qrCounter.setStationViewed('' + i, false);
+    // }
   }
 
 }

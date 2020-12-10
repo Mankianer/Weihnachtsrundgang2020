@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {QrCounterServiceService} from '../services/qr-counter-service.service';
+import {CookieService} from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-landing-page',
@@ -8,10 +9,10 @@ import {QrCounterServiceService} from '../services/qr-counter-service.service';
 })
 export class LandingPageComponent implements OnInit {
 
-  constructor(public qrCounter: QrCounterServiceService) { }
+  constructor(public qrCounter: QrCounterServiceService, public cookieService: CookieService) { }
 
   ngOnInit(): void {
-    this.qrCounter.setLandingPageViewed();
+
   }
 
 }
