@@ -11,3 +11,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .hintergrund {
   background-image: linear-gradient(#fff, #4b6c73);
 }
+
+.stationLeftMove{
+  left: -40px;
+}
+
+.center {
+  text-align: center;
+}

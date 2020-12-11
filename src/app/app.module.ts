@@ -33,6 +33,11 @@ import {MatRippleModule} from '@angular/material/core';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { Station2v3Component } from './stations/station2v3/station2v3.component';
+import { Station3v2Component } from './stations/station3v2/station3v2.component';
+import { Station3v3Component } from './stations/station3v3/station3v3.component';
+import { Station4v2Component } from './stations/station4v2/station4v2.component';
+import { Station7v2Component } from './stations/station7v2/station7v2.component';
+import { Station7v3Component } from './stations/station7v3/station7v3.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +57,12 @@ import { Station2v3Component } from './stations/station2v3/station2v3.component'
     DevComponent,
     LandingPageComponent,
     Station2v2Component,
-    Station2v3Component
+    Station2v3Component,
+    Station3v2Component,
+    Station3v3Component,
+    Station4v2Component,
+    Station7v2Component,
+    Station7v3Component
   ],
   imports: [
     BrowserModule,

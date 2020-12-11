@@ -17,6 +17,11 @@ import {DevComponent} from './dev/dev.component';
 import {LandingPageComponent} from './landing-page/landing-page.component';
 import {Station2v2Component} from './stations/station2v2/station2v2.component';
 import {Station2v3Component} from './stations/station2v3/station2v3.component';
+import {Station3v2Component} from './stations/station3v2/station3v2.component';
+import {Station3v3Component} from './stations/station3v3/station3v3.component';
+import {Station4v2Component} from './stations/station4v2/station4v2.component';
+import {Station7v2Component} from './stations/station7v2/station7v2.component';
+import {Station7v3Component} from './stations/station7v3/station7v3.component';
 
 
 @NgModule({
@@ -31,10 +36,15 @@ import {Station2v3Component} from './stations/station2v3/station2v3.component';
       {path: 'station/2/2', component: Station2v2Component, canActivate: [StationguardGuard]},
       {path: 'station/2/3', component: Station2v3Component, canActivate: [StationguardGuard]},
       {path: 'station/3', component: Station3Component, canActivate: [StationguardGuard]},
+      {path: 'station/3/2', component: Station3v2Component, canActivate: [StationguardGuard]},
+      {path: 'station/3/3', component: Station3v3Component, canActivate: [StationguardGuard]},
       {path: 'station/4', component: Station4Component, canActivate: [StationguardGuard]},
+      {path: 'station/4/2', component: Station4v2Component, canActivate: [StationguardGuard]},
       {path: 'station/5', component: Station5Component, canActivate: [StationguardGuard]},
       {path: 'station/6', component: Station6Component, canActivate: [StationguardGuard]},
       {path: 'station/7', component: Station7Component, canActivate: [StationguardGuard]},
+      {path: 'station/7/2', component: Station7v2Component, canActivate: [StationguardGuard]},
+      {path: 'station/7/3', component: Station7v3Component, canActivate: [StationguardGuard]},
       {path: 'station/8', component: Station8Component, canActivate: [StationguardGuard]},
       {path: 'dev', component: DevComponent},
       {path: 'map', component: MapComponent},

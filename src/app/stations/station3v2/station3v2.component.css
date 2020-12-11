@@ -1,0 +1,120 @@
+.mediaViewInfo {
+  --web-view-name: Station 03_02;
+  --web-view-id: Station_03_02;
+  --web-scale-to-fit: true;
+  --web-scale-to-fit-type: width;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+:root {
+  --web-view-ids: Station_03_02;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+#Station_03_02 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 736px;
+  overflow: scroll;
+  --web-view-name: Station 03_02;
+  --web-view-id: Station_03_02;
+  --web-scale-to-fit: true;
+  --web-scale-to-fit-type: width;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+#Rechteck_1_v {
+  fill: url(#Rechteck_1_v);
+}
+.Rechteck_1_v {
+  position: absolute;
+  overflow: visible;
+  width: 413.483px;
+  height: 736.151px;
+  left: 0.371px;
+  top: 0.027px;
+}
+#sam-beasley-MVriaJOjgp8-unspla {
+  position: absolute;
+  width: 1091.5px;
+  height: 736px;
+  left: -345px;
+  top: 0px;
+  overflow: visible;
+}
+#Gruppe_1 {
+  position: absolute;
+  width: 34px;
+  height: 25px;
+  left: 23px;
+  top: 35px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Station_03_01.html;
+  cursor: pointer;
+}
+#Rechteck_2 {
+  fill: rgba(255,255,255,1);
+}
+.Rechteck_2 {
+  position: absolute;
+  overflow: visible;
+  width: 34px;
+  height: 5px;
+  left: 0px;
+  top: 0px;
+}
+#Rechteck_7 {
+  fill: rgba(255,255,255,1);
+}
+.Rechteck_7 {
+  position: absolute;
+  overflow: visible;
+  width: 34px;
+  height: 5px;
+  left: 0px;
+  top: 10px;
+}
+#Rechteck_6 {
+  fill: rgba(255,255,255,1);
+}
+.Rechteck_6 {
+  position: absolute;
+  overflow: visible;
+  width: 34px;
+  height: 5px;
+  left: 0px;
+  top: 20px;
+}
+#Wo_ist_fr_Dich_Heimat__Was_bed {
+  left: 57.165px;
+  top: 551.609px;
+  position: absolute;
+  overflow: visible;
+  width: 300.421px;
+  height: 277.6419982910156px;
+  line-height: 26px;
+  margin-top: -1.5px;
+  text-align: center;
+  font-family: American Typewriter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  color: rgba(22,22,21,1);
+}
