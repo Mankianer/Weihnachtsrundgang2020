@@ -1,5 +1,5 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport
+  <mat-sidenav #drawer class="sidenav hintergrund" fixedInViewport
                [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
                [mode]="(isHandset$ | async) ? 'over' : 'side'"
                [opened]="(isHandset$ | async) === false">
@@ -7,7 +7,7 @@
       <span matBadge="1" matBadgeOverlap="false"
             [matBadgeHidden]="isAnyStationViewed()">Menu</span>
     </mat-toolbar>
-    <mat-nav-list>
+    <mat-nav-list style="">
       <a mat-list-item href="landing">Start Seite</a>
       <a mat-list-item href="station/1" *ngIf="qrCounter.lastCounter >= 1"
          (click)="qrCounter.setStationViewed('1')">
@@ -45,11 +45,10 @@
                                            [matBadgeHidden]="qrCounter.isNewStationForReward()">Belohnung</span></a>
       <a mat-list-item href="map">Karte</a>
       <a mat-list-item href="dev">Dev</a>
-      <div style="height: 150px"></div>
-      <footer style="bottom: 0; position: absolute; width: 100%; background-color: white">
+      <div style="vertical-align: bottom">
         <a mat-list-item href="http://five0.de/impressum/">Impressum</a>
         <a mat-list-item href="http://five0.de/datenschutzerklaerung/">Datenschutzerklärung</a>
-      </footer>
+      </div>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -58,7 +57,7 @@
     <!--      <span>Weihnachtsrundgang 2020</span>-->
     <!--    </mat-toolbar>-->
 
-    <div class="container">
+    <div class="container hintergrund">
       <router-outlet></router-outlet>
     </div>
     <button
