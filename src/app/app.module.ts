@@ -38,6 +38,8 @@ import { Station3v3Component } from './stations/station3v3/station3v3.component'
 import { Station4v2Component } from './stations/station4v2/station4v2.component';
 import { Station7v2Component } from './stations/station7v2/station7v2.component';
 import { Station7v3Component } from './stations/station7v3/station7v3.component';
+import {NgxAudioPlayerModule} from 'ngx-audio-player';
+import { Station1v2Component } from './stations/station1v2/station1v2.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +64,8 @@ import { Station7v3Component } from './stations/station7v3/station7v3.component'
     Station3v3Component,
     Station4v2Component,
     Station7v2Component,
-    Station7v3Component
+    Station7v3Component,
+    Station1v2Component
   ],
   imports: [
     BrowserModule,
@@ -79,7 +82,8 @@ import { Station7v3Component } from './stations/station7v3/station7v3.component'
     MatGridListModule,
     MatRippleModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    NgxAudioPlayerModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]

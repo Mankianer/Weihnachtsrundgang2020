@@ -22,6 +22,7 @@ import {Station3v3Component} from './stations/station3v3/station3v3.component';
 import {Station4v2Component} from './stations/station4v2/station4v2.component';
 import {Station7v2Component} from './stations/station7v2/station7v2.component';
 import {Station7v3Component} from './stations/station7v3/station7v3.component';
+import {Station1v2Component} from './stations/station1v2/station1v2.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import {Station7v3Component} from './stations/station7v3/station7v3.component';
       {path: '', component: LandingPageComponent},
       {path: 'reward', component: RewardComponent},
       {path: 'station/1', component: Station1Component, canActivate: [StationguardGuard]},
+      {path: 'station/1/2', component: Station1v2Component, canActivate: [StationguardGuard]},
       {path: 'station/2', component: Station2Component, canActivate: [StationguardGuard]},
       {path: 'station/2/2', component: Station2v2Component, canActivate: [StationguardGuard]},
       {path: 'station/2/3', component: Station2v3Component, canActivate: [StationguardGuard]},
