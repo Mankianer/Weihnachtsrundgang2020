@@ -1,6 +1,7 @@
 import {EventEmitter, Injectable} from '@angular/core';
 import {CookieService} from 'ngx-cookie-service';
 import {formatNumber} from '@angular/common';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ export class QrCounterServiceService {
   public counter: EventEmitter<number> = new EventEmitter<number>();
   public lastCounter: number;
 
-  constructor(public cookieService: CookieService) {
+  constructor(public cookieService: CookieService, private http: HttpClient) {
     this.counter.subscribe(n => this.lastCounter = n);
     if (!this.cookieService.check(this.CookieString)) {
       this.cookieService.set(this.CookieString, '', {path: '/', expires: new Date(2021, 2, 28)});
@@ -64,6 +65,7 @@ export class QrCounterServiceService {
     if (this.QrIds.includes(id)) {
       if (!this.cookieService.check('QR_ID:' + id)) {
         this.cookieService.set('QR_ID:' + id, 'X', {path: '/', expires: new Date(2021, 2, 28)});
+        this.http.get('https://api.countapi.xyz/hit/weihnachtsrundgang.five0.de/Station' + (this.lastCounter + 1)).subscribe();
         this.addCounter();
         this.updateNewStationForReward(true);
       }

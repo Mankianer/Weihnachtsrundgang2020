@@ -50,6 +50,8 @@ import { Station6v2Component } from './stations/station6v2/station6v2.component'
 import { Station1v5Component } from './stations/station1v5/station1v5.component';
 import { Station5v5Component } from './stations/station5v5/station5v5.component';
 import { VisitorCounterComponent } from './visitor-counter/visitor-counter.component';
+import {HttpClientModule} from '@angular/common/http';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -103,7 +105,9 @@ import { VisitorCounterComponent } from './visitor-counter/visitor-counter.compo
     MatRippleModule,
     MatFormFieldModule,
     MatInputModule,
-    NgxAudioPlayerModule
+    NgxAudioPlayerModule,
+    HttpClientModule,
+    MatExpansionModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]
