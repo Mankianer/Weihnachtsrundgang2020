@@ -8,7 +8,7 @@
             [matBadgeHidden]="isAnyStationViewed()">Menu</span>
     </mat-toolbar>
     <mat-nav-list style="">
-      <a mat-list-item href="landing">Start Seite</a>
+      <a mat-list-item href="landing">Startseite</a>
       <a mat-list-item href="station/1" *ngIf="qrCounter.lastCounter >= 1"
          (click)="qrCounter.setStationViewed('1')">
         <span matBadge="🎄" matBadgeOverlap="false"

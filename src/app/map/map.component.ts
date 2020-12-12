@@ -65,14 +65,14 @@ export class MapComponent implements OnInit {
       this.vectorlayer.getSource().removeFeature(this.ownPos);
     }
     this.ownPos = new Feature<Point>(new Point(olProj.fromLonLat(lonLan)));
-    this.ownPos.setStyle(new Style({image: new Icon({src: '../assets/baseline_location_on_black_18dp.png'})}));
+    this.ownPos.setStyle(new Style({image: new Icon({src: 'assets/baseline_location_on_black_18dp.png'})}));
     this.vectorlayer.getSource().addFeature(this.ownPos);
     return this.ownPos;
   }
 
   public addPoint(lonLan: number[]): Feature {
     const feature = new Feature<Point>(new Point(olProj.fromLonLat(lonLan)));
-    feature.setStyle(new Style({image: new Icon({src: '../assets/baseline_qr_code_scanner_black_18dp.png'})}));
+    feature.setStyle(new Style({image: new Icon({src: 'assets/baseline_qr_code_scanner_black_18dp.png'})}));
     this.vectorlayer.getSource().addFeature(feature);
     return feature;
   }
