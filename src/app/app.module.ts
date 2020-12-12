@@ -49,6 +49,7 @@ import { Station8v4Component } from './stations/station8v4/station8v4.component'
 import { Station6v2Component } from './stations/station6v2/station6v2.component';
 import { Station1v5Component } from './stations/station1v5/station1v5.component';
 import { Station5v5Component } from './stations/station5v5/station5v5.component';
+import { VisitorCounterComponent } from './visitor-counter/visitor-counter.component';
 
 @NgModule({
   declarations: [
@@ -83,7 +84,8 @@ import { Station5v5Component } from './stations/station5v5/station5v5.component'
     Station8v4Component,
     Station6v2Component,
     Station1v5Component,
-    Station5v5Component
+    Station5v5Component,
+    VisitorCounterComponent
   ],
   imports: [
     BrowserModule,
