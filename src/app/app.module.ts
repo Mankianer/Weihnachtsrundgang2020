@@ -40,6 +40,12 @@ import { Station7v2Component } from './stations/station7v2/station7v2.component'
 import { Station7v3Component } from './stations/station7v3/station7v3.component';
 import {NgxAudioPlayerModule} from 'ngx-audio-player';
 import { Station1v2Component } from './stations/station1v2/station1v2.component';
+import { Station1v4Component } from './stations/station1v4/station1v4.component';
+import { Station1v3Component } from './stations/station1v3/station1v3.component';
+import { Station4v3Component } from './stations/station4v3/station4v3.component';
+import { Station8v2Component } from './stations/station8v2/station8v2.component';
+import { Station8v3Component } from './stations/station8v3/station8v3.component';
+import { Station8v4Component } from './stations/station8v4/station8v4.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +71,13 @@ import { Station1v2Component } from './stations/station1v2/station1v2.component'
     Station4v2Component,
     Station7v2Component,
     Station7v3Component,
-    Station1v2Component
+    Station1v2Component,
+    Station1v4Component,
+    Station1v3Component,
+    Station4v3Component,
+    Station8v2Component,
+    Station8v3Component,
+    Station8v4Component
   ],
   imports: [
     BrowserModule,
