@@ -26,6 +26,15 @@ export class MapComponent implements OnInit {
 
   private ownPos: Feature<Point>;
 
+  private stationenPos = [[7.5047773, 51.4915125], [7.5103076, 51.4920300], [7.5171597, 51.4912585],
+    [7.5196283, 51.4884682],
+    [7.5233894, 51.4869185],
+    [7.5203770, 51.4869606],
+    [7.5150739, 51.4883204],
+    [7.5150739, 51.4883204],
+    [7.5084572, 51.4893387]
+  ];
+
   ngOnInit(): void {
     this.vectorlayer = new VectorLayer({
       source: new VectorSource()
@@ -45,7 +54,7 @@ export class MapComponent implements OnInit {
       }),
     });
 
-    [[7.51492, 51.490099], [7.512656, 51.488831], [7.513984, 51.491797]].forEach(value => {
+    this.stationenPos.forEach(value => {
       this.addPoint(value);
     });
 
