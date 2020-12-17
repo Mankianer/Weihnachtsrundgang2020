@@ -33,6 +33,7 @@ import {Station6v2Component} from './stations/station6v2/station6v2.component';
 import {Station1v5Component} from './stations/station1v5/station1v5.component';
 import {Station5v5Component} from './stations/station5v5/station5v5.component';
 import {VisitorCounterComponent} from './visitor-counter/visitor-counter.component';
+import {Station5v3Component} from './stations/station5v3/station5v3.component';
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import {VisitorCounterComponent} from './visitor-counter/visitor-counter.compone
       {path: 'station/4/2', component: Station4v2Component, canActivate: [StationguardGuard]},
       {path: 'station/4/3', component: Station4v3Component, canActivate: [StationguardGuard]},
       {path: 'station/5', component: Station5Component, canActivate: [StationguardGuard]},
+      {path: 'station/5/3', component: Station5v3Component, canActivate: [StationguardGuard]},
       {path: 'station/5/5', component: Station5v5Component, canActivate: [StationguardGuard]},
       {path: 'station/6', component: Station6Component, canActivate: [StationguardGuard]},
       {path: 'station/6/2', component: Station6v2Component, canActivate: [StationguardGuard]},

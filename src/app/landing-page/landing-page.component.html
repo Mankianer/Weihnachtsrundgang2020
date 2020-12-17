@@ -11,6 +11,11 @@
      (click)="qrCounter.setLandingPageViewed();" style="background-color: rgba(5,78,88,1); color: white;">Zu Station 1</a>
   <br/>
   <br/>
+  <a mat-flat-button href="/map"
+      style="background-color: rgba(5,78,88,1); color: white;">Zur Karte</a>
+  <br/>
+  <br/>
+  <br/>
   <br/>
   <br/>
   <button mat-flat-button *ngIf="qrCounter.lastCounter >= 1" color="warn" (click)="cookieService.deleteAll('/')">Fortschritt löschen</button>
