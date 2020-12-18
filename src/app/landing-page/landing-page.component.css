@@ -1,0 +1,259 @@
+.mediaViewInfo {
+  --web-view-name: Station;
+  --web-view-id: Station;
+  --web-scale-to-fit: true;
+  --web-scale-to-fit-type: width;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+:root {
+  --web-view-ids: Station;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+#Station {
+  position: absolute;
+  width: 414px;
+  height: 736px;
+  background-color: rgba(255,255,255,0);
+  overflow: hidden;
+  --web-view-name: Station;
+  --web-view-id: Station;
+  --web-scale-to-fit: true;
+  --web-scale-to-fit-type: width;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+#Rechteck_1_h {
+  fill: url(#Rechteck_1_h);
+}
+.Rechteck_1_h {
+  position: absolute;
+  overflow: visible;
+  width: 413.483px;
+  height: 736.151px;
+  left: 0.371px;
+  top: 0.027px;
+}
+#Gruppe_2 {
+  position: absolute;
+  width: 292.158px;
+  height: 162.128px;
+  left: 64.842px;
+  top: 179px;
+  overflow: visible;
+}
+#__________Stationen_um_den_gan {
+  left: 0px;
+  top: 13.432px;
+  position: absolute;
+  overflow: visible;
+  width: 293.158px;
+  height: 148.6956787109375px;
+  line-height: 18px;
+  margin-top: -2px;
+  text-align: left;
+  font-family: American Typewriter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(22,22,21,1);
+}
+#ID8 {
+  left: 0.158px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 60px;
+  height: 93px;
+  text-align: left;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 65px;
+  color: rgba(0,0,0,1);
+}
+#Evangelische_Jugend_Hrde_und_S {
+  left: 57px;
+  top: 116px;
+  position: absolute;
+  overflow: visible;
+  width: 301px;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-top: -2px;
+  text-align: center;
+  font-family: American Typewriter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(0,0,0,1);
+}
+#Weihnachten_fr_Dich {
+  left: 57px;
+  top: 385px;
+  position: absolute;
+  overflow: visible;
+  width: 301px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: American Typewriter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  color: rgba(0,0,0,1);
+}
+#Rechteck_46 {
+  fill: rgba(5,78,88,1);
+}
+.Rechteck_46 {
+  position: absolute;
+  overflow: visible;
+  width: 300px;
+  height: 52px;
+  left: 57px;
+  top: 463px;
+}
+#Rechteck_84 {
+  fill: rgba(5,78,88,1);
+}
+.Rechteck_84 {
+  position: absolute;
+  overflow: visible;
+  width: 300px;
+  height: 52px;
+  left: 57px;
+  top: 527px;
+}
+#Rechteck_47 {
+  fill: rgba(185,0,0,1);
+}
+.Rechteck_47 {
+  position: absolute;
+  overflow: visible;
+  width: 300px;
+  height: 33px;
+  left: 57px;
+  top: 646px;
+}
+#ZU_STATION_1 {
+  left: 57px;
+  top: 480px;
+  position: absolute;
+  overflow: visible;
+  width: 301px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: rgba(255,255,255,1);
+}
+#Karte {
+  left: 57px;
+  top: 544px;
+  position: absolute;
+  overflow: visible;
+  width: 301px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: rgba(255,255,255,1);
+  text-transform: uppercase;
+}
+#FORTSCHRITT_LSCHEN {
+  left: 57px;
+  top: 655px;
+  position: absolute;
+  overflow: visible;
+  width: 301px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: rgba(255,255,255,1);
+}
+#Gruppe_1 {
+  position: absolute;
+  width: 34px;
+  height: 25px;
+  left: 23px;
+  top: 35px;
+  overflow: visible;
+}
+#Rechteck_2 {
+  fill: rgba(75,108,115,1);
+}
+.Rechteck_2 {
+  position: absolute;
+  overflow: visible;
+  width: 34px;
+  height: 5px;
+  left: 0px;
+  top: 0px;
+}
+#Rechteck_7 {
+  fill: rgba(75,108,115,1);
+}
+.Rechteck_7 {
+  position: absolute;
+  overflow: visible;
+  width: 34px;
+  height: 5px;
+  left: 0px;
+  top: 10px;
+}
+#Rechteck_6 {
+  fill: rgba(75,108,115,1);
+}
+.Rechteck_6 {
+  position: absolute;
+  overflow: visible;
+  width: 34px;
+  height: 5px;
+  left: 0px;
+  top: 20px;
+}
+#Persnliche_weihnachten_um_den_ {
+  left: 23.153px;
+  top: 91.432px;
+  position: absolute;
+  overflow: visible;
+  width: 366.847px;
+  height: 73.9542236328125px;
+  line-height: 18px;
+  margin-top: -2px;
+  text-align: left;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(22,22,21,1);
+  text-transform: uppercase;
+}
+#Girlande_obenpng {
+  position: absolute;
+  width: 404px;
+  height: 199px;
+  left: 5px;
+  top: 150px;
+  overflow: visible;
+}
+#Girlande_unten {
+  position: absolute;
+  width: 405px;
+  height: 211px;
+  left: 5px;
+  top: 428px;
+  overflow: visible;
+}
