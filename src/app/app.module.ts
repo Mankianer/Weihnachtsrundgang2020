@@ -53,6 +53,7 @@ import { VisitorCounterComponent } from './visitor-counter/visitor-counter.compo
 import {HttpClientModule} from '@angular/common/http';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { Station5v3Component } from './stations/station5v3/station5v3.component';
+import { Station5v2Component } from './stations/station5v2/station5v2.component';
 
 @NgModule({
   declarations: [
@@ -89,7 +90,8 @@ import { Station5v3Component } from './stations/station5v3/station5v3.component'
     Station1v5Component,
     Station5v5Component,
     VisitorCounterComponent,
-    Station5v3Component
+    Station5v3Component,
+    Station5v2Component
   ],
   imports: [
     BrowserModule,
