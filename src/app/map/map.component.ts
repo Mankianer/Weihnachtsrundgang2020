@@ -26,13 +26,13 @@ export class MapComponent implements OnInit {
 
   private ownPos: Feature<Point>;
 
-  private stationenPos = [[7.5047773, 51.4915125], [7.5103076, 51.4920300], [7.5171597, 51.4912585],
-    [7.5196283, 51.4884682],
-    [7.5233894, 51.4869185],
+  private stationenPos = [[7.778409, 51.599073], [7.778473, 51.598988], [7.777319, 51.598839],
+    [7.776720, 51.595936],
+    [7.777353, 51.598074],
     [7.5203770, 51.4869606],
-    [7.5150739, 51.4883204],
-    [7.5150739, 51.4883204],
-    [7.5084572, 51.4893387]
+    [7.778548, 51.595558],
+    [7.781153, 51.594494],
+    [7.779847, 51.596286]
   ];
 
   ngOnInit(): void {
@@ -49,7 +49,7 @@ export class MapComponent implements OnInit {
         this.vectorlayer
       ],
       view: new View({
-        center: olProj.fromLonLat([7.51492, 51.490099]),
+        center: olProj.fromLonLat([7.777623, 51.597041]),
         zoom: 16
       }),
     });
