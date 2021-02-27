@@ -1,0 +1,74 @@
+<mat-sidenav-container class="sidenav-container hintergrund">
+  <mat-sidenav #drawer class="sidenav hintergrund" fixedInViewport
+               [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+               [mode]="(isHandset$ | async) ? 'over' : 'side'"
+               [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>
+      <span matBadge="1" matBadgeOverlap="false"
+            [matBadgeHidden]="isAnyStationViewed()">Menu</span>
+    </mat-toolbar>
+    <mat-nav-list style="">
+      <a mat-list-item href="landing">Startseite</a>
+      <a mat-list-item href="station/1" *ngIf="qrCounter.lastCounter >= 1"
+         (click)="qrCounter.setStationViewed('1')">
+        <span matBadge="🎄" matBadgeOverlap="false"
+              [matBadgeHidden]="qrCounter.isStationViewed('1')">Station 1</span></a>
+      <a mat-list-item href="station/2" *ngIf="qrCounter.lastCounter >= 2 "
+         (click)="qrCounter.setStationViewed('2')">
+        <span matBadge="🎄" matBadgeOverlap="false"
+              [matBadgeHidden]="qrCounter.isStationViewed('2')">Station 2</span></a>
+      <a mat-list-item href="station/3" *ngIf="qrCounter.lastCounter >= 3 "
+         (click)="qrCounter.setStationViewed('3')">
+        <span matBadge="🎄" matBadgeOverlap="false"
+              [matBadgeHidden]="qrCounter.isStationViewed('3')">Station 3</span></a>
+      <a mat-list-item href="station/4" *ngIf="qrCounter.lastCounter >= 4 "
+         (click)="qrCounter.setStationViewed('4')">
+        <span matBadge="🎄" matBadgeOverlap="false"
+              [matBadgeHidden]="qrCounter.isStationViewed('4')">Station 4</span></a>
+      <a mat-list-item href="station/5" *ngIf="qrCounter.lastCounter >= 5 "
+         (click)="qrCounter.setStationViewed('5')">
+        <span matBadge="🎄" matBadgeOverlap="false"
+              [matBadgeHidden]="qrCounter.isStationViewed('5')">Station 5</span></a>
+      <a mat-list-item href="station/6" *ngIf="qrCounter.lastCounter >= 6 "
+         (click)="qrCounter.setStationViewed('6')">
+        <span matBadge="🎄" matBadgeOverlap="false"
+              [matBadgeHidden]="qrCounter.isStationViewed('6')">Station 6</span></a>
+      <a mat-list-item href="station/7" *ngIf="qrCounter.lastCounter >= 7 "
+         (click)="qrCounter.setStationViewed('7')">
+        <span matBadge="🎄" matBadgeOverlap="false"
+              [matBadgeHidden]="qrCounter.isStationViewed('7')">Station 7</span></a>
+      <a mat-list-item href="station/8" *ngIf="qrCounter.lastCounter >= 8 "
+         (click)="qrCounter.setStationViewed('8')">
+        <span matBadge="🎄" matBadgeOverlap="false"
+              [matBadgeHidden]="qrCounter.isStationViewed('8')">Station 8</span></a>
+      <a mat-list-item href="reward"><span matBadge="1" matBadgeOverlap="false"
+                                           [matBadgeHidden]="qrCounter.isNewStationForReward()">Belohnung</span></a>
+      <a mat-list-item href="map">Karte</a>
+<!--      <a mat-list-item href="dev">Dev</a>-->
+      <div style="vertical-align: bottom; text-align: center">
+        <a mat-list-item href="http://five0.de/impressum/">Impressum</a>
+        <a mat-list-item href="http://five0.de/datenschutzerklaerung/">Datenschutzerklärung</a>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!--    <mat-toolbar color="primary">-->
+    <!--      -->
+    <!--      <span>Weihnachtsrundgang 2020</span>-->
+    <!--    </mat-toolbar>-->
+
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+    <button
+      type="button"
+      aria-label="Toggle sidenav"
+      mat-icon-button
+      (click)="drawer.toggle()"
+      *ngIf="isHandset$ | async" style="top: 0; position: absolute; float: top">
+      <mat-icon aria-label="Side nav toggle icon" matBadge="🎄" matBadgeColor="accent"
+                [matBadgeHidden]="isAnyStationViewed()">menu
+      </mat-icon>
+    </button>
+  </mat-sidenav-content>
+</mat-sidenav-container>
