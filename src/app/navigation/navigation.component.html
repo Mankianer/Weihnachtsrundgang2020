@@ -4,20 +4,19 @@
                [mode]="(isHandset$ | async) ? 'over' : 'side'"
                [opened]="(isHandset$ | async) === false">
     <mat-toolbar>
-      <span matBadge="1" matBadgeOverlap="false"
-            [matBadgeHidden]="isAnyStationViewed()">Menu</span>
+      <span>Menu</span>
     </mat-toolbar>
     <mat-nav-list style="">
       <a mat-list-item href="landing">Startseite</a>
-      <a *ngFor="let a of getArrayOfStations(); let i = index"
-        mat-list-item href="station/{{i}}"
-         (click)="qrCounter.setStationViewed('1')">
-        <span matBadge="🎄" matBadgeOverlap="false" *ngIf="qrCounter.lastCounter >= i"
-              [matBadgeHidden]="qrCounter.isStationViewed('' + i)">Station {{i}}</span></a>
+      <a *ngFor="let a of getArrayOfStations(); let i = index" mat-list-item
+         href="station/{{i + 1}}"
+         (click)="qrCounter.setStationViewed('' + i + 1)">
+        <span matBadge="⚪" matBadgeOverlap="false" *ngIf="qrCounter.lastCounter >= i + 1"
+              [matBadgeHidden]="qrCounter.isStationViewed('' + i + 1)">Station {{i + 1}}</span></a>
       <a mat-list-item href="reward"><span matBadge="1" matBadgeOverlap="false"
                                            [matBadgeHidden]="qrCounter.isNewStationForReward()">Belohnung</span></a>
       <a mat-list-item href="map">Karte</a>
-<!--      <a mat-list-item href="dev">Dev</a>-->
+      <!--      <a mat-list-item href="dev">Dev</a>-->
       <div style="vertical-align: bottom; text-align: center">
         <a mat-list-item href="http://five0.de/impressum/">Impressum</a>
         <a mat-list-item href="http://five0.de/datenschutzerklaerung/">Datenschutzerklärung</a>
@@ -39,7 +38,7 @@
       mat-icon-button
       (click)="drawer.toggle()"
       *ngIf="isHandset$ | async" style="top: 0; position: absolute; float: top">
-      <mat-icon aria-label="Side nav toggle icon" matBadge="🎄" matBadgeColor="accent"
+      <mat-icon aria-label="Side nav toggle icon" matBadge="⚪" matBadgeColor="accent"
                 [matBadgeHidden]="isAnyStationViewed()">menu
       </mat-icon>
     </button>
