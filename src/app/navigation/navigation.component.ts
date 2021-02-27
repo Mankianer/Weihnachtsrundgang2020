@@ -12,6 +12,7 @@ import {QrCounterServiceService} from '../services/qr-counter-service.service';
 })
 export class NavigationComponent {
 
+
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
   .pipe(
     map(result => result.matches),
@@ -20,6 +21,10 @@ export class NavigationComponent {
 
   constructor(private breakpointObserver: BreakpointObserver,
               public cookieService: CookieService, public qrCounter: QrCounterServiceService) {
+  }
+
+  public getArrayOfStations(): number[] {
+    return Array(this.qrCounter.lastCounter).fill(0);
   }
 
   public isAnyStationViewed(): boolean {
