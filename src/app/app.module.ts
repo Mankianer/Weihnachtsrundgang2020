@@ -31,6 +31,7 @@ import { Station1v3Component } from './stations/station1v3/station1v3.component'
 import { VisitorCounterComponent } from './visitor-counter/visitor-counter.component';
 import {HttpClientModule} from '@angular/common/http';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatInputModule,
     NgxAudioPlayerModule,
     HttpClientModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatCardModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]

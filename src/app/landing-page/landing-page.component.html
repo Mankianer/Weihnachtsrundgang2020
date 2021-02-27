@@ -1,51 +1,14 @@
-<div style="height: 35px"></div>
-<div id="Station">
-  <img id="Girlande_obenpng" src="Girlande_obenpng.png"
-       srcset="Girlande_obenpng.png 1x, Girlande_obenpng@2x.png 2x">
-
-  <img id="Girlande_unten" src="Girlande_unten.png"
-       srcset="Girlande_unten.png 1x, Girlande_unten@2x.png 2x">
-  <div id="Gruppe_2">
-    <div id="__________Stationen_um_den_gan">
-      <span><span style="font-size: 50px">8</span>          Stationen um den ganzen See herum <br/>          verteilt. An jeder Station etwas Neues  <br/>          zum Sehen und Hören. An jeder Station eine Person aus der Weihnachts-geschichte. Geh ein Stück und scanne die QR-Codes. Direkt hintereinander bei einer Runde um den See. Oder mach einfach weiter, wenn Du das nächste Mal kommst.</span>
-    </div>
-  </div>
-  <div id="Evangelische_Jugend_Hrde_und_S">
-    <span>Evangelische Jugend Hörde und Schüren</span>
-  </div>
-  <div id="Weihnachten_fr_Dich">
-    <span>Weihnachten für Dich</span>
-  </div>
-  <a href="/station/1" *ngIf="qrCounter.lastCounter >= 1" (click)="qrCounter.setLandingPageViewed();">
-    <svg class="Rechteck_46">
-      <rect id="Rechteck_46" rx="10" ry="10" x="0" y="0" width="300" height="52">
-      </rect>
-    </svg>
-    <div id="ZU_STATION_1">
-      <span>ZU STATION 1</span>
-    </div>
-  </a>
-  <a href="/map">
-    <svg class="Rechteck_84">
-      <rect id="Rechteck_84" rx="10" ry="10" x="0" y="0" width="300" height="52">
-      </rect>
-    </svg>
-    <div id="Karte">
-      <span>Karte</span>
-    </div>
-  </a>
-  <a (click)="cookieService.deleteAll('/')" *ngIf="qrCounter.lastCounter >= 1">
-    <svg class="Rechteck_47">
-      <rect id="Rechteck_47" rx="10" ry="10" x="0" y="0" width="300" height="33">
-      </rect>
-    </svg>
-    <div id="FORTSCHRITT_LSCHEN">
-      <span>FORTSCHRITT LÖSCHEN</span>
-    </div>
-  </a>
-  <div id="Persnliche_weihnachten_um_den_">
-    <span>Persönliche weihnachten um den Phönix-See</span><br>
-  </div>
-
-
-</div>
+<mat-card style="height: fit-content; margin: 10px; max-width: 600px">
+  <mat-card-header>
+    <mat-card-title>Landing Page</mat-card-title>
+    <mat-card-subtitle>Startseite</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    Startseite der Anwendung.<br/>
+    Soll ersten Eindruck vermitteln.<br/>
+    (Begrüsungstext & Kontext der Stationen)
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-flat-button color="primary">Erklärung</button>
+  </mat-card-actions>
+</mat-card>

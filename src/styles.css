@@ -8,10 +8,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   height: 100%;
 }
 
-.hintergrund {
-  background-image: linear-gradient(#fff, #4b6c73);
-}
-
 .stationLeftMove{
   left: -40px;
 }
