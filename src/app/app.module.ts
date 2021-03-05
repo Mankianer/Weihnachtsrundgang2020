@@ -32,6 +32,10 @@ import { VisitorCounterComponent } from './visitor-counter/visitor-counter.compo
 import {HttpClientModule} from '@angular/common/http';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatCardModule} from '@angular/material/card';
+import { ErklaerungComponent } from './erklaerung/erklaerung.component';
+import { InhaltDirective } from './erklaerung/inhalt/inhalt.directive';
+import {InhaltComponent} from './erklaerung/inhalt/inhalt.component';
+import {ErklaerungNavigationComponent} from './erklaerung/inhalt/erklaerung_navigation.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +51,10 @@ import {MatCardModule} from '@angular/material/card';
     Station1v4Component,
     Station1v3Component,
     VisitorCounterComponent,
+    ErklaerungComponent,
+    InhaltDirective,
+    InhaltComponent,
+    ErklaerungNavigationComponent,
   ],
   imports: [
     BrowserModule,
