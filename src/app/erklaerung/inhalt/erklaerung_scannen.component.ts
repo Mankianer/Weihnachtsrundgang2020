@@ -8,18 +8,14 @@ import {Observable} from 'rxjs';
 import {map, shareReplay} from 'rxjs/operators';
 
 @Component({
-  selector: 'app-erklaerung-navigation',
-  template: '<p *ngIf="isHandset$ | async">Oben auf der linken Seite siehst du einen Knopf, um die Navigation zu öffnen.</p>' +
-            '<p *ngIf="!(isHandset$ | async)">Auf der linken Seite befindet sich die Navigation.</p>' +
-            '<p>Dort gibt es:</p>' +
-            '<p>die <strong>Startseite</strong><br>' +
-            'die freigeschalteten <strong>Stationen (1-8)</strong>.<br>' +
-            'die <strong>Belohnungen</strong> für frei geschaltete Stationen.<br>' +
-            'die <strong>Karte</strong> um die Stationen zu finden.<br>' +
-            'und <strong>Informationen</strong> wie <strong>Hilfe und Datenschutz</strong>.</p>',
+  selector: 'app-erklaerung-scannen',
+  template: '<p>Um Stationen freizuschalten, muss man die QR-Codes an den Stationen rund um den Phönix-See scannen und den Link aufrufen.</p>' +
+    '<p>Jeder neue QR-Code schaltet die nächste Station auf dieser Webseite frei. Dabei ist die Reihenfolge egal.</p>' +
+    '<p>Die Informationen über die freigeschalteten Stationen werden als Cookies gespeichert. Die gespeicherten Cookies können auf der ' +
+    'Startseite gelöscht werden.</p>',
   styleUrls: ['./inhalt.component.css']
 })
-export class ErklaerungNavigationComponent implements InhaltComponent {
+export class ErklaerungScannenComponent implements InhaltComponent {
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
   .pipe(
@@ -31,7 +27,7 @@ export class ErklaerungNavigationComponent implements InhaltComponent {
   }
 
   getTitel(): string {
-    return 'Navigation';
+    return 'Scannen';
   }
 
   onClose(): void {

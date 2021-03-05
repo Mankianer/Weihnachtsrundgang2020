@@ -7,8 +7,8 @@
     <ng-template #inhalt appInhalt></ng-template>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-raised-button>Zurück</button>
+    <button mat-raised-button (click)="this.zurueck()" [disabled]="!index">Zurück</button>
     <button mat-raised-button color="warn">Überspringen</button>
-    <button mat-raised-button color="accent">Weiter</button>
+    <button mat-raised-button color="accent" (click)="this.weiter()" >Weiter</button>
   </mat-card-actions>
 </mat-card>

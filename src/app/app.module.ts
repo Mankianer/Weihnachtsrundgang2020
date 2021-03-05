@@ -36,6 +36,7 @@ import { ErklaerungComponent } from './erklaerung/erklaerung.component';
 import { InhaltDirective } from './erklaerung/inhalt/inhalt.directive';
 import {InhaltComponent} from './erklaerung/inhalt/inhalt.component';
 import {ErklaerungNavigationComponent} from './erklaerung/inhalt/erklaerung_navigation.component';
+import {ErklaerungScannenComponent} from './erklaerung/inhalt/erklaerung_scannen.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import {ErklaerungNavigationComponent} from './erklaerung/inhalt/erklaerung_navi
     InhaltDirective,
     InhaltComponent,
     ErklaerungNavigationComponent,
+    ErklaerungScannenComponent
   ],
   imports: [
     BrowserModule,
