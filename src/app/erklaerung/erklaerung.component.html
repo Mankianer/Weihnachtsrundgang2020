@@ -1,4 +1,4 @@
-<mat-card style="height: fit-content; margin: 10px; max-width: 600px">
+<mat-card class="matcardContainer">
   <mat-card-header>
     <mat-card-title>Erklärung</mat-card-title>
     <mat-card-subtitle>{{subtitel}}</mat-card-subtitle>
@@ -7,8 +7,11 @@
     <ng-template #inhalt appInhalt></ng-template>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-raised-button (click)="this.zurueck()" [disabled]="!index">Zurück</button>
-    <button mat-raised-button color="warn">Überspringen</button>
-    <button mat-raised-button color="accent" (click)="this.weiter()" >Weiter</button>
+    <div style="text-align: center;">
+      <button mat-raised-button (click)="this.zurueck()" [disabled]="!index">Zurück</button>
+      <button mat-raised-button color="warn">Überspringen</button>
+      <button mat-raised-button color="accent" (click)="this.weiter()" *ngIf="!isEnd">Weiter</button>
+      <a mat-raised-button color="accent" href="aktuelleStation" *ngIf="isEnd">Weiter</a>
+    </div>
   </mat-card-actions>
 </mat-card>

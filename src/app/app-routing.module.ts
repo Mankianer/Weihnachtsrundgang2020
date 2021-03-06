@@ -14,6 +14,7 @@ import {Station1v3Component} from './stations/station1v3/station1v3.component';
 import {Station1v5Component} from './stations/station1v5/station1v5.component';
 import {VisitorCounterComponent} from './visitor-counter/visitor-counter.component';
 import {ErklaerungComponent} from './erklaerung/erklaerung.component';
+import {AktuelleStationComponent} from './aktuelle-station/aktuelle-station.component';
 
 
 @NgModule({
@@ -31,9 +32,10 @@ import {ErklaerungComponent} from './erklaerung/erklaerung.component';
       {path: 'visitors', component: VisitorCounterComponent},
       {path: 'dev', component: DevComponent},
       {path: 'map', component: MapComponent},
+      {path: 'aktuelleStation', component: AktuelleStationComponent},
       {path: 'landing', component: LandingPageComponent},
       {path: 'QR/:id', component: ContentControllerComponent},
-      {path: '**', component: ContentControllerComponent}
+      {path: 'station', component: ContentControllerComponent}
     ])
   ],
   exports: [RouterModule]

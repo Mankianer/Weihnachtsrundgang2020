@@ -21,6 +21,7 @@ export class ErklaerungComponent implements OnInit {
   @ViewChild(InhaltDirective, {static: true}) appInhalt: InhaltDirective;
 
   index = 0;
+  isEnd = false;
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) {
   }
@@ -31,6 +32,7 @@ export class ErklaerungComponent implements OnInit {
 
 
   private loadInhalt(): void{
+    this.isEnd = this.index >= this.inhaltComponents.length - 1;
     const comp = this.inhaltComponents[this.index % this.inhaltComponents.length];
     // this.currentInhaltComponents = comp.prototype;
     this.subtitel = comp.prototype.getTitel();

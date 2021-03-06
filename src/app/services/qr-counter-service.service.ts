@@ -17,7 +17,7 @@ export class QrCounterServiceService {
   constructor(public cookieService: CookieService, private http: HttpClient) {
     this.counter.subscribe(n => this.lastCounter = n);
     if (!this.cookieService.check(this.CookieString)) {
-      this.cookieService.set(this.CookieString, '', {path: '/', expires: new Date(2021, 2, 28)});
+      this.cookieService.set(this.CookieString, '', {path: '/', expires: new Date(2022, 2, 28)});
     }
     this.counter.emit((this.cookieService.get(this.CookieString).length));
   }
@@ -27,13 +27,13 @@ export class QrCounterServiceService {
   }
 
   public setLandingPageViewed(): void {
-    return this.cookieService.set('LandingPageViewed', 'X', {path: '/', expires: new Date(2021, 2, 28)});
+    return this.cookieService.set('LandingPageViewed', 'X', {path: '/', expires: new Date(2022, 2, 28)});
   }
 
   public setStationViewed(station: string, isViewed = true): void {
     const name = 'isStationViewed:' + station;
     if (isViewed) {
-      this.cookieService.set(name, 'X', {path: '/', expires: new Date(2021, 2, 28)});
+      this.cookieService.set(name, 'X', {path: '/', expires: new Date(2022, 2, 28)});
     } else {
       this.cookieService.delete(name, '/');
     }
@@ -55,7 +55,7 @@ export class QrCounterServiceService {
 
   public updateNewStationForReward(neu: boolean): void {
     if (neu) {
-      this.cookieService.set('NewStationForReward', 'X', {path: '/', expires: new Date(2021, 2, 28)});
+      this.cookieService.set('NewStationForReward', 'X', {path: '/', expires: new Date(2022, 2, 28)});
     } else {
       this.cookieService.delete('NewStationForReward', '/');
     }
@@ -65,7 +65,7 @@ export class QrCounterServiceService {
     if (this.QrIds.includes(id)) {
       if (!this.cookieService.check('QR_ID:' + id)) {
         const domain = window.location.hostname;
-        this.cookieService.set('QR_ID:' + id, 'X', {path: '/', expires: new Date(2021, 2, 28)});
+        this.cookieService.set('QR_ID:' + id, 'X', {path: '/', expires: new Date(2022, 2, 28)});
         this.http.get('https://api.countapi.xyz/hit/' + domain + '/Station' + (this.lastCounter + 1)).subscribe();
         this.addCounter();
         this.updateNewStationForReward(true);
@@ -82,13 +82,13 @@ export class QrCounterServiceService {
 
   public addCounter(): void {
     const qrCounter = this.cookieService.get(this.CookieString);
-    this.cookieService.set(this.CookieString, qrCounter + 'X', {path: '/', expires: new Date(2021, 2, 28)});
+    this.cookieService.set(this.CookieString, qrCounter + 'X', {path: '/', expires: new Date(2022, 2, 28)});
     this.counter.emit((this.cookieService.get(this.CookieString).length));
   }
 
   public subCounter(): void {
     const qrCounter = this.cookieService.get(this.CookieString);
-    this.cookieService.set(this.CookieString, qrCounter.substr(0, qrCounter.length - 1), {path: '/', expires: new Date(2021, 2, 28)});
+    this.cookieService.set(this.CookieString, qrCounter.substr(0, qrCounter.length - 1), {path: '/', expires: new Date(2022, 2, 28)});
     this.counter.emit((this.cookieService.get(this.CookieString).length));
   }
 }

@@ -14,6 +14,7 @@ export class ContentControllerComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log('last' + this.qrCounter.lastCounter);
     this.qrCounter.addID(this.route.snapshot.paramMap.get('id'));
   }
 

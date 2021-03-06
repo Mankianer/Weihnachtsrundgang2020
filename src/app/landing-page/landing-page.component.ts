@@ -12,7 +12,7 @@ export class LandingPageComponent implements OnInit {
   constructor(public qrCounter: QrCounterServiceService, public cookieService: CookieService) { }
 
   ngOnInit(): void {
-
+    this.qrCounter.setLandingPageViewed();
   }
 
 }
