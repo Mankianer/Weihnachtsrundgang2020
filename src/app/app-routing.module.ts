@@ -22,6 +22,7 @@ import {Station5Component} from './stations/station5/station5.component';
 import {Station6Component} from './stations/station6/station6.component';
 import {Station7Component} from './stations/station7/station7.component';
 import {Station8Component} from './stations/station8/station8.component';
+import {FaqComponent} from './faq/faq.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import {Station8Component} from './stations/station8/station8.component';
       {path: '', component: LandingPageComponent},
       {path: 'reward', component: RewardComponent},
       {path: 'erklaerung', component: ErklaerungComponent},
+      {path: 'station', component: ContentControllerComponent},
       {path: 'station/1', component: Station1Component, canActivate: [StationguardGuard]},
       {path: 'station/1/2', component: Station1v2Component, canActivate: [StationguardGuard]},
       {path: 'station/1/3', component: Station1v3Component, canActivate: [StationguardGuard]},
@@ -49,7 +51,7 @@ import {Station8Component} from './stations/station8/station8.component';
       {path: 'aktuelleStation', component: AktuelleStationComponent},
       {path: 'landing', component: LandingPageComponent},
       {path: 'QR/:id', component: ContentControllerComponent},
-      {path: 'station', component: ContentControllerComponent}
+      {path: 'faq', component: FaqComponent}
     ])
   ],
   exports: [RouterModule]
