@@ -15,6 +15,13 @@ import {Station1v5Component} from './stations/station1v5/station1v5.component';
 import {VisitorCounterComponent} from './visitor-counter/visitor-counter.component';
 import {ErklaerungComponent} from './erklaerung/erklaerung.component';
 import {AktuelleStationComponent} from './aktuelle-station/aktuelle-station.component';
+import {Station2Component} from './stations/station2/station2.component';
+import {Station3Component} from './stations/station3/station3.component';
+import {Station4Component} from './stations/station4/station4.component';
+import {Station5Component} from './stations/station5/station5.component';
+import {Station6Component} from './stations/station6/station6.component';
+import {Station7Component} from './stations/station7/station7.component';
+import {Station8Component} from './stations/station8/station8.component';
 
 
 @NgModule({
@@ -29,6 +36,13 @@ import {AktuelleStationComponent} from './aktuelle-station/aktuelle-station.comp
       {path: 'station/1/2', component: Station1v2Component, canActivate: [StationguardGuard]},
       {path: 'station/1/3', component: Station1v3Component, canActivate: [StationguardGuard]},
       {path: 'station/1/4', component: Station1v4Component, canActivate: [StationguardGuard]},
+      {path: 'station/2', component: Station2Component, canActivate: [StationguardGuard]},
+      {path: 'station/3', component: Station3Component, canActivate: [StationguardGuard]},
+      {path: 'station/4', component: Station4Component, canActivate: [StationguardGuard]},
+      {path: 'station/5', component: Station5Component, canActivate: [StationguardGuard]},
+      {path: 'station/6', component: Station6Component, canActivate: [StationguardGuard]},
+      {path: 'station/7', component: Station7Component, canActivate: [StationguardGuard]},
+      {path: 'station/8', component: Station8Component, canActivate: [StationguardGuard]},
       {path: 'visitors', component: VisitorCounterComponent},
       {path: 'dev', component: DevComponent},
       {path: 'map', component: MapComponent},

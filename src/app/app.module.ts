@@ -38,6 +38,13 @@ import {InhaltComponent} from './erklaerung/inhalt/inhalt.component';
 import {ErklaerungNavigationComponent} from './erklaerung/inhalt/erklaerung_navigation.component';
 import {ErklaerungScannenComponent} from './erklaerung/inhalt/erklaerung_scannen.component';
 import { AktuelleStationComponent } from './aktuelle-station/aktuelle-station.component';
+import { Station2Component } from './stations/station2/station2.component';
+import { Station3Component } from './stations/station3/station3.component';
+import { Station4Component } from './stations/station4/station4.component';
+import { Station5Component } from './stations/station5/station5.component';
+import { Station6Component } from './stations/station6/station6.component';
+import { Station7Component } from './stations/station7/station7.component';
+import { Station8Component } from './stations/station8/station8.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +65,14 @@ import { AktuelleStationComponent } from './aktuelle-station/aktuelle-station.co
     InhaltComponent,
     ErklaerungNavigationComponent,
     ErklaerungScannenComponent,
-    AktuelleStationComponent
+    AktuelleStationComponent,
+    Station2Component,
+    Station3Component,
+    Station4Component,
+    Station5Component,
+    Station6Component,
+    Station7Component,
+    Station8Component
   ],
   imports: [
     BrowserModule,

@@ -7,7 +7,7 @@
   <mat-card-actions>
     <div style="text-align: center">
       <a mat-raised-button href="landing">zur Startseite</a>
-      <a mat-raised-button color="accent" href="station">zur aktuelle Station</a>
+      <a mat-raised-button color="accent" href="station" *ngIf="qrCounter.lastCounter > 0">zur aktuelle Station</a>
     </div>
   </mat-card-actions>
 </mat-card>
