@@ -16,6 +16,18 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   text-align: center;
 }
 
+.center-absolut {
+  position:absolute;
+  left:50%;
+  transform:translate(-50%);
+  width:414px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.center-absolut #background{
+}
+
 .matcardContainer {
   height: fit-content;
   margin: 10px;
