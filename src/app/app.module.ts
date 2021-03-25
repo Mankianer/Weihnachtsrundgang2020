@@ -47,6 +47,8 @@ import {LandingPage2Component} from './landing-page/landing-page2.component';
 import {NavItemComponent} from './navigation/nav-item.component';
 import {Station2v1Component} from './stations/station2/station2v1.component';
 import {Station3v1Component} from './stations/station3/station3v1.component';
+import {InfoButtonComponent, InfoDialog} from './info-button/info-button.component';
+import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -76,7 +78,9 @@ import {Station3v1Component} from './stations/station3/station3v1.component';
     Station8Component,
     FaqComponent,
     LandingPage2Component,
-    NavItemComponent
+    NavItemComponent,
+    InfoButtonComponent,
+    InfoDialog
   ],
   imports: [
     BrowserModule,
@@ -97,7 +101,8 @@ import {Station3v1Component} from './stations/station3/station3v1.component';
     NgxAudioPlayerModule,
     HttpClientModule,
     MatExpansionModule,
-    MatCardModule
+    MatCardModule,
+    MatDialogModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]
