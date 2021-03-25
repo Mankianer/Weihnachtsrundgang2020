@@ -25,9 +25,6 @@ import {MatRippleModule} from '@angular/material/core';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {NgxAudioPlayerModule} from 'ngx-audio-player';
-import { Station1v2Component } from './stations/station1v2/station1v2.component';
-import { Station1v4Component } from './stations/station1v4/station1v4.component';
-import { Station1v3Component } from './stations/station1v3/station1v3.component';
 import { VisitorCounterComponent } from './visitor-counter/visitor-counter.component';
 import {HttpClientModule} from '@angular/common/http';
 import {MatExpansionModule} from '@angular/material/expansion';
@@ -48,6 +45,8 @@ import { Station8Component } from './stations/station8/station8.component';
 import { FaqComponent } from './faq/faq.component';
 import {LandingPage2Component} from './landing-page/landing-page2.component';
 import {NavItemComponent} from './navigation/nav-item.component';
+import {Station2v1Component} from './stations/station2/station2v1.component';
+import {Station3v1Component} from './stations/station3/station3v1.component';
 
 @NgModule({
   declarations: [
@@ -59,9 +58,6 @@ import {NavItemComponent} from './navigation/nav-item.component';
     MapComponent,
     DevComponent,
     LandingPageComponent,
-    Station1v2Component,
-    Station1v4Component,
-    Station1v3Component,
     VisitorCounterComponent,
     ErklaerungComponent,
     InhaltDirective,
@@ -70,7 +66,9 @@ import {NavItemComponent} from './navigation/nav-item.component';
     ErklaerungScannenComponent,
     AktuelleStationComponent,
     Station2Component,
+    Station2v1Component,
     Station3Component,
+    Station3v1Component,
     Station4Component,
     Station5Component,
     Station6Component,

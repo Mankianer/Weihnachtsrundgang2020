@@ -8,10 +8,6 @@ import {MapComponent} from './map/map.component';
 import {StationguardGuard} from './stationguard.guard';
 import {DevComponent} from './dev/dev.component';
 import {LandingPageComponent} from './landing-page/landing-page.component';
-import {Station1v2Component} from './stations/station1v2/station1v2.component';
-import {Station1v4Component} from './stations/station1v4/station1v4.component';
-import {Station1v3Component} from './stations/station1v3/station1v3.component';
-import {Station1v5Component} from './stations/station1v5/station1v5.component';
 import {VisitorCounterComponent} from './visitor-counter/visitor-counter.component';
 import {ErklaerungComponent} from './erklaerung/erklaerung.component';
 import {AktuelleStationComponent} from './aktuelle-station/aktuelle-station.component';
@@ -24,6 +20,8 @@ import {Station7Component} from './stations/station7/station7.component';
 import {Station8Component} from './stations/station8/station8.component';
 import {FaqComponent} from './faq/faq.component';
 import {LandingPage2Component} from './landing-page/landing-page2.component';
+import {Station2v1Component} from './stations/station2/station2v1.component';
+import {Station3v1Component} from './stations/station3/station3v1.component';
 
 
 @NgModule({
@@ -36,11 +34,13 @@ import {LandingPage2Component} from './landing-page/landing-page2.component';
       {path: 'erklaerung', component: ErklaerungComponent},
       {path: 'station', component: ContentControllerComponent},
       {path: 'station/1', component: Station1Component, canActivate: [StationguardGuard]},
-      {path: 'station/1/2', component: Station1v2Component, canActivate: [StationguardGuard]},
-      {path: 'station/1/3', component: Station1v3Component, canActivate: [StationguardGuard]},
-      {path: 'station/1/4', component: Station1v4Component, canActivate: [StationguardGuard]},
       {path: 'station/2', component: Station2Component, canActivate: [StationguardGuard]},
+      {path: 'station/2/1', component: Station2v1Component, canActivate: [StationguardGuard]},
+      {path: 'station/2/2', component: Station2v1Component, canActivate: [StationguardGuard]},
+      {path: 'station/2/3', component: Station2v1Component, canActivate: [StationguardGuard]},
+      {path: 'station/2/4', component: Station2v1Component, canActivate: [StationguardGuard]},
       {path: 'station/3', component: Station3Component, canActivate: [StationguardGuard]},
+      {path: 'station/3/1', component: Station3v1Component, canActivate: [StationguardGuard]},
       {path: 'station/4', component: Station4Component, canActivate: [StationguardGuard]},
       {path: 'station/5', component: Station5Component, canActivate: [StationguardGuard]},
       {path: 'station/6', component: Station6Component, canActivate: [StationguardGuard]},

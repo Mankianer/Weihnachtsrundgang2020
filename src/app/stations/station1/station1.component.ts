@@ -8,9 +8,10 @@ import {QrCounterServiceService} from '../../services/qr-counter-service.service
 })
 export class Station1Component implements OnInit {
 
-  constructor() { }
+  constructor(private qrCounter: QrCounterServiceService) { }
 
   ngOnInit(): void {
+    this.qrCounter.setStationViewed('1');
   }
 
 }
