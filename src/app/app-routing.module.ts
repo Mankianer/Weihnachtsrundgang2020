@@ -51,7 +51,7 @@ import {LandingPage2Component} from './landing-page/landing-page2.component';
       {path: 'map', component: MapComponent},
       {path: 'aktuelleStation', component: AktuelleStationComponent},
       {path: 'landing', component: LandingPageComponent},
-      {path: 'landing/2', component: LandingPage2Component},
+      {path: 'landing/1', component: LandingPage2Component, canActivate: [StationguardGuard]},
       {path: 'QR/:id', component: ContentControllerComponent},
       {path: 'faq', component: FaqComponent}
     ])

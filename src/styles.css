@@ -20,9 +20,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   position:absolute;
   left:50%;
   transform:translate(-50%);
-  width:414px;
+  /*width:414px;*/
+  width: 414px;
+  /*max-width: 414px;*/
   height: 100%;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .center-absolut #background{
