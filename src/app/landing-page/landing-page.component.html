@@ -11,8 +11,8 @@
       </path>
     </svg>
   </div>
-  <div id="Startseite_01" style="background-color: #00000000">
-    <div id="Button_Large" class="Button_Large">
+  <div id="Startseite_01" style="background-color: #00000000" >
+    <a id="Button_Large" class="Button_Large" href="/landing/2" *ngIf="qrCounter.lastCounter > 0">
       <svg class="Rechteck_119">
         <rect id="Rechteck_119" rx="11" ry="11" x="0" y="0" width="327" height="48">
         </rect>
@@ -20,8 +20,8 @@
       <div id="AUF_GEHTS">
         <span>AUF GEHTS!</span>
       </div>
-    </div>
-    <div id="Button_Large_" class="Button_Large">
+    </a>
+    <a id="Button_Large_" class="Button_Large" (click)="reset()" *ngIf="qrCounter.lastCounter >= 1">
       <svg class="Rechteck_119_">
         <rect id="Rechteck_119_" rx="11" ry="11" x="0" y="0" width="228" height="33">
         </rect>
@@ -29,7 +29,7 @@
       <div id="FORTSCHRITT_LSCHEN">
         <span>FORTSCHRITT LÖSCHEN?</span>
       </div>
-    </div>
+    </a>
     <div id="Large_Body">
       <div id="Mach_dich_auf_und_entdecke_die">
         <span>Mach dich auf und entdecke die 8 verschiedenen Stelen, die um den Phoenix-See herum auf dich warten. Nutze bei einem Spaziergang um den See die Chance, „Neuanfänge“ zu entdecken– mal als Impuls für den Weg, mal als gemeinsame Aktion mit allen, die unterwegs sind.</span>

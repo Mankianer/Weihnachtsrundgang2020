@@ -46,6 +46,7 @@ import { Station6Component } from './stations/station6/station6.component';
 import { Station7Component } from './stations/station7/station7.component';
 import { Station8Component } from './stations/station8/station8.component';
 import { FaqComponent } from './faq/faq.component';
+import {LandingPage2Component} from './landing-page/landing-page2.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { FaqComponent } from './faq/faq.component';
     Station6Component,
     Station7Component,
     Station8Component,
-    FaqComponent
+    FaqComponent,
+    LandingPage2Component
   ],
   imports: [
     BrowserModule,

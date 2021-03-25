@@ -23,6 +23,7 @@ import {Station6Component} from './stations/station6/station6.component';
 import {Station7Component} from './stations/station7/station7.component';
 import {Station8Component} from './stations/station8/station8.component';
 import {FaqComponent} from './faq/faq.component';
+import {LandingPage2Component} from './landing-page/landing-page2.component';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import {FaqComponent} from './faq/faq.component';
       {path: 'map', component: MapComponent},
       {path: 'aktuelleStation', component: AktuelleStationComponent},
       {path: 'landing', component: LandingPageComponent},
+      {path: 'landing/2', component: LandingPage2Component},
       {path: 'QR/:id', component: ContentControllerComponent},
       {path: 'faq', component: FaqComponent}
     ])
