@@ -13,7 +13,10 @@ export class StationguardGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    if (route.url[1].path === '1' && !this.qrCounter.isLandingPageViewed()) {
+    if (route.url[0].path === 'landing'){
+      return true;
+    }
+    if (!this.qrCounter.isLandingPageViewed()) {
       this.router.navigate(['/landing']);
       return false;
     }

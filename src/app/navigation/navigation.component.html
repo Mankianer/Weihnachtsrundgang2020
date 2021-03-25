@@ -1,28 +1,48 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport
-               [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-               [mode]="(isHandset$ | async) ? 'over' : 'side'"
-               [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>
-      <span>Menu</span>
-    </mat-toolbar>
-    <mat-nav-list style="">
-      <a mat-list-item href="landing">Startseite</a>
-      <a *ngFor="let a of getArrayOfStations(); let i = index" mat-list-item
-         href="station/{{i + 1}}"
-         (click)="qrCounter.setStationViewed('' + i + 1)">
-        <span matBadge="⚪" matBadgeOverlap="false" *ngIf="qrCounter.lastCounter >= i + 1"
-              [matBadgeHidden]="qrCounter.isStationViewed('' + i + 1)">Station {{i + 1}}</span></a>
-      <a mat-list-item href="reward"><span matBadge="1" matBadgeOverlap="false"
-                                           [matBadgeHidden]="qrCounter.isNewStationForReward()">Belohnung</span></a>
-      <a mat-list-item href="map">Karte</a>
-      <a mat-list-item href="faq">FAQ</a>
+  <mat-sidenav
+    style="width: 300px; background-color: rgba(58,172,80,1); border-bottom-right-radius: 29px; border-top-right-radius: 29px"
+    #drawer class="sidenav" fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false">
+    <!--    <mat-toolbar>-->
+    <!--      <span>Menu</span>-->
+    <!--    </mat-toolbar>-->
+    <mat-nav-list style="margin-top: 30px">
+      <app-nav-item titel="Startseite" subtitel="Wilkommen" link="landing"></app-nav-item>
+        <app-nav-item *ngFor="let a of getArrayOfStations(); let i = index"
+                      [highlight]="qrCounter.isStationViewed('' + (i + 1)) ? 'font-nav' : 'font-nav-highlight'"
+                      titel="Station 0{{i + 1}}" subtitel="{{stationSubtitels[i]}}"
+                      link="station/{{i + 1}}"
+                      (click)="qrCounter.setStationViewed('' + (i + 1))"></app-nav-item>
+
+<!--      <a class="font-nav-titel" *ngFor="let a of getArrayOfStations(); let i = index" mat-list-item-->
+<!--         href="station/{{i + 1}}"-->
+<!--         >-->
+<!--        <span matBadge="⚪" matBadgeOverlap="false" *ngIf="qrCounter.lastCounter >= i + 1"-->
+<!--              [matBadgeHidden]="qrCounter.isStationViewed('' + i + 1)">Station 0{{i + 1}}</span></a>-->
+<!--      <a class="font-nav-titel" mat-list-item href="reward"><span matBadge="1"-->
+<!--                                                                  matBadgeOverlap="false"-->
+<!--                                                                  [matBadgeHidden]="qrCounter.isNewStationForReward()">Belohnung</span></a>-->
+      <a class="font-nav-titel" mat-list-item href="map">Karte</a>
+      <a class="font-nav-titel" mat-list-item href="faq">FAQ</a>
       <!--      <a mat-list-item href="dev">Dev</a>-->
-      <div style="vertical-align: bottom; text-align: center">
-        <a mat-list-item href="http://five0.de/impressum/">Impressum</a>
-        <a mat-list-item href="http://five0.de/datenschutzerklaerung/">Datenschutzerklärung</a>
+      <div style="vertical-align: bottom; word-wrap: break-word">
+        <a class="font-nav-titel" mat-list-item href="http://five0.de/impressum/">Impressum</a>
+        <a class="font-nav-titel" mat-list-item href="http://five0.de/datenschutzerklaerung/">Datenschutz-erklärung</a>
       </div>
     </mat-nav-list>
+    <button
+      color="primary"
+      type="button"
+      aria-label="Toggle sidenav"
+      mat-icon-button
+      (click)="drawer.toggle()"
+      *ngIf="isHandset$ | async" style="top: 0; position: absolute; float: top">
+      <mat-icon style="color: white;" aria-label="Side nav toggle icon" matBadge="⚪" matBadgeColor="accent"
+                [matBadgeHidden]="isAnyStationViewed()">menu
+      </mat-icon>
+    </button>
   </mat-sidenav>
   <mat-sidenav-content>
     <!--    <mat-toolbar color="primary">-->
@@ -39,7 +59,7 @@
       mat-icon-button
       (click)="drawer.toggle()"
       *ngIf="isHandset$ | async" style="top: 0; position: absolute; float: top">
-      <mat-icon aria-label="Side nav toggle icon" matBadge="⚪" matBadgeColor="accent"
+      <mat-icon  aria-label="Side nav toggle icon" matBadge="⚪" matBadgeColor="accent"
                 [matBadgeHidden]="isAnyStationViewed()">menu
       </mat-icon>
     </button>

@@ -47,6 +47,7 @@ import { Station7Component } from './stations/station7/station7.component';
 import { Station8Component } from './stations/station8/station8.component';
 import { FaqComponent } from './faq/faq.component';
 import {LandingPage2Component} from './landing-page/landing-page2.component';
+import {NavItemComponent} from './navigation/nav-item.component';
 
 @NgModule({
   declarations: [
@@ -76,7 +77,8 @@ import {LandingPage2Component} from './landing-page/landing-page2.component';
     Station7Component,
     Station8Component,
     FaqComponent,
-    LandingPage2Component
+    LandingPage2Component,
+    NavItemComponent
   ],
   imports: [
     BrowserModule,
