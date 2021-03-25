@@ -21,6 +21,7 @@
   height: 736px;
   background-color: rgba(255,255,255,1);
   overflow: hidden;
+  letter-spacing: 0px;
   --web-view-name: Startseite 02;
   --web-view-id: Startseite_02;
   --web-scale-to-fit: true;
