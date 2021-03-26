@@ -1,6 +1,6 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav
-    style="width: 300px; background-color: rgba(58,172,80,1); border-bottom-right-radius: 29px; border-top-right-radius: 29px"
+    style=" width: 320px; background-color: rgba(58,172,80,1); border-bottom-right-radius: 29px; border-top-right-radius: 29px"
     #drawer class="sidenav" fixedInViewport
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
@@ -8,7 +8,7 @@
     <!--    <mat-toolbar>-->
     <!--      <span>Menu</span>-->
     <!--    </mat-toolbar>-->
-    <mat-nav-list style="margin-top: 30px">
+    <mat-nav-list style="margin-top: 30px; overflow: visible;">
       <app-nav-item titel="Startseite" subtitel="Wilkommen" link="landing"></app-nav-item>
         <app-nav-item *ngFor="let a of getArrayOfStations(); let i = index"
                       [highlight]="qrCounter.isStationViewed('' + (i + 1)) ? 'font-nav' : 'font-nav-highlight'"
@@ -29,9 +29,11 @@
       <!--      <a mat-list-item href="dev">Dev</a>-->
       <div style="vertical-align: bottom; word-wrap: break-word">
         <a class="font-nav-titel" mat-list-item href="http://five0.de/impressum/">Impressum</a>
-        <a class="font-nav-titel" mat-list-item href="http://five0.de/datenschutzerklaerung/">Datenschutz-erklärung</a>
+        <a class="font-nav-titel" mat-list-item href="http://five0.de/datenschutzerklaerung/">Datenschutzerklärung</a>
       </div>
     </mat-nav-list>
+<!--    <div style="height: 100%"></div>-->
+    <div><img src="assets/ostereier.png" style="position: relative; width: 35%; "></div>
     <button
       color="primary"
       type="button"
