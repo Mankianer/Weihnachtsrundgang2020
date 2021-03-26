@@ -49,6 +49,8 @@ import {Station2v1Component} from './stations/station2/station2v1.component';
 import {Station3v1Component} from './stations/station3/station3v1.component';
 import {InfoButtonComponent, InfoDialog} from './info-button/info-button.component';
 import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+import {Station7v1Component} from './stations/station7/station7v1.component';
+import {Station8v1Component} from './stations/station8/station8v1.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +82,9 @@ import {MatDialog, MatDialogModule} from '@angular/material/dialog';
     LandingPage2Component,
     NavItemComponent,
     InfoButtonComponent,
-    InfoDialog
+    InfoDialog,
+    Station7v1Component,
+    Station8v1Component
   ],
   imports: [
     BrowserModule,

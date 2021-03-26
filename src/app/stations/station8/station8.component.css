@@ -1,0 +1,1031 @@
+.hintergrund {
+  background-image: linear-gradient(#a8cae8, #f09e91 51.72%, #f0753e);
+  width: 100%;
+  min-width: 414px;
+  height: 1400px;
+}
+
+.mediaViewInfo {
+  --web-view-name: Station 08;
+  --web-view-id: Station_08;
+  --web-scale-to-fit: true;
+  --web-scale-to-fit-type: width;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+:root {
+  --web-view-ids: Station_08;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+#Station_08 {
+  position: absolute;
+  width: 414px;
+  height: 1361px;
+  background-color: rgba(255,255,255,1);
+  --web-scale-to-fit: true;
+  --web-scale-to-fit-type: width;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+#Rechteck_1454_y {
+  fill: url(#Rechteck_1454_y);
+}
+.Rechteck_1454_y {
+  position: absolute;
+  overflow: visible;
+  width: 414px;
+  height: 1472px;
+  left: 0px;
+  top: 0px;
+}
+#Gruppe_22 {
+  position: absolute;
+  width: 345.862px;
+  height: 490.72px;
+  left: 0px;
+  top: 1039.166px;
+  overflow: visible;
+}
+#Pfad_105_ {
+  fill: url(#Pfad_105_);
+}
+.Pfad_105_ {
+  overflow: visible;
+  position: absolute;
+  width: 114.837px;
+  height: 272.763px;
+  left: 190.778px;
+  top: 142.39px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_106_ {
+  fill: url(#Pfad_106_);
+}
+.Pfad_106_ {
+  overflow: visible;
+  position: absolute;
+  width: 111.365px;
+  height: 272.763px;
+  left: 168.626px;
+  top: 142.39px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_107_ {
+  fill: url(#Pfad_107_);
+}
+.Pfad_107_ {
+  overflow: visible;
+  position: absolute;
+  width: 145.309px;
+  height: 410.425px;
+  left: 98.512px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_108_ {
+  fill: url(#Pfad_108_);
+}
+.Pfad_108_ {
+  overflow: visible;
+  position: absolute;
+  width: 138.378px;
+  height: 397.642px;
+  left: 63.375px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_109_ {
+  fill: url(#Pfad_109_);
+}
+.Pfad_109_ {
+  overflow: visible;
+  position: absolute;
+  width: 134.666px;
+  height: 443.534px;
+  left: 46.892px;
+  top: 47.186px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_110_bb {
+  fill: url(#Pfad_110_bb);
+}
+.Pfad_110_bb {
+  overflow: visible;
+  position: absolute;
+  width: 130.393px;
+  height: 443.534px;
+  left: 77.755px;
+  top: 47.186px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_111_bd {
+  fill: url(#Pfad_111_bd);
+}
+.Pfad_111_bd {
+  overflow: visible;
+  position: absolute;
+  width: 145.189px;
+  height: 238.565px;
+  left: 0px;
+  top: 250.092px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_112_bf {
+  fill: url(#Pfad_112_bf);
+}
+.Pfad_112_bf {
+  overflow: visible;
+  position: absolute;
+  width: 148.829px;
+  height: 238.565px;
+  left: 4.024px;
+  top: 250.092px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_113_bh {
+  fill: url(#Pfad_113_bh);
+}
+.Pfad_113_bh {
+  overflow: visible;
+  position: absolute;
+  width: 130.363px;
+  height: 250.28px;
+  left: 215.498px;
+  top: 237.513px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_114_bj {
+  fill: url(#Pfad_114_bj);
+}
+.Pfad_114_bj {
+  overflow: visible;
+  position: absolute;
+  width: 131.166px;
+  height: 250.28px;
+  left: 205.011px;
+  top: 237.513px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Gruppe_23 {
+  position: absolute;
+  width: 345.862px;
+  height: 490.72px;
+  left: 267px;
+  top: 1025.166px;
+  overflow: visible;
+}
+#Pfad_105_bm {
+  fill: url(#Pfad_105_bm);
+}
+.Pfad_105_bm {
+  overflow: visible;
+  position: absolute;
+  width: 114.837px;
+  height: 272.763px;
+  left: 190.778px;
+  top: 142.39px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_106_bo {
+  fill: url(#Pfad_106_bo);
+}
+.Pfad_106_bo {
+  overflow: visible;
+  position: absolute;
+  width: 111.365px;
+  height: 272.763px;
+  left: 168.626px;
+  top: 142.39px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_107_bq {
+  fill: url(#Pfad_107_bq);
+}
+.Pfad_107_bq {
+  overflow: visible;
+  position: absolute;
+  width: 145.309px;
+  height: 410.425px;
+  left: 98.512px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_108_bs {
+  fill: url(#Pfad_108_bs);
+}
+.Pfad_108_bs {
+  overflow: visible;
+  position: absolute;
+  width: 138.378px;
+  height: 397.642px;
+  left: 63.375px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_109_bu {
+  fill: url(#Pfad_109_bu);
+}
+.Pfad_109_bu {
+  overflow: visible;
+  position: absolute;
+  width: 134.666px;
+  height: 443.534px;
+  left: 46.892px;
+  top: 47.186px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_110_bw {
+  fill: url(#Pfad_110_bw);
+}
+.Pfad_110_bw {
+  overflow: visible;
+  position: absolute;
+  width: 130.393px;
+  height: 443.534px;
+  left: 77.755px;
+  top: 47.186px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_111_by {
+  fill: url(#Pfad_111_by);
+}
+.Pfad_111_by {
+  overflow: visible;
+  position: absolute;
+  width: 145.189px;
+  height: 238.565px;
+  left: 0px;
+  top: 250.092px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_112_b {
+  fill: url(#Pfad_112_b);
+}
+.Pfad_112_b {
+  overflow: visible;
+  position: absolute;
+  width: 148.829px;
+  height: 238.565px;
+  left: 4.024px;
+  top: 250.092px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_113_ca {
+  fill: url(#Pfad_113_ca);
+}
+.Pfad_113_ca {
+  overflow: visible;
+  position: absolute;
+  width: 130.363px;
+  height: 250.28px;
+  left: 215.498px;
+  top: 237.513px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_114_ca {
+  fill: url(#Pfad_114_ca);
+}
+.Pfad_114_ca {
+  overflow: visible;
+  position: absolute;
+  width: 131.166px;
+  height: 250.28px;
+  left: 205.011px;
+  top: 237.513px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Gruppe_24 {
+  position: absolute;
+  width: 345.862px;
+  height: 490.72px;
+  left: -296.861px;
+  top: 1039.166px;
+  overflow: visible;
+}
+#Pfad_105_ca {
+  fill: url(#Pfad_105_ca);
+}
+.Pfad_105_ca {
+  overflow: visible;
+  position: absolute;
+  width: 114.837px;
+  height: 272.763px;
+  left: 190.778px;
+  top: 142.39px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_106_ca {
+  fill: url(#Pfad_106_ca);
+}
+.Pfad_106_ca {
+  overflow: visible;
+  position: absolute;
+  width: 111.365px;
+  height: 272.763px;
+  left: 168.626px;
+  top: 142.39px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_107_cb {
+  fill: url(#Pfad_107_cb);
+}
+.Pfad_107_cb {
+  overflow: visible;
+  position: absolute;
+  width: 145.309px;
+  height: 410.425px;
+  left: 98.512px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_108_cd {
+  fill: url(#Pfad_108_cd);
+}
+.Pfad_108_cd {
+  overflow: visible;
+  position: absolute;
+  width: 138.378px;
+  height: 397.642px;
+  left: 63.375px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_109_cf {
+  fill: url(#Pfad_109_cf);
+}
+.Pfad_109_cf {
+  overflow: visible;
+  position: absolute;
+  width: 134.666px;
+  height: 443.534px;
+  left: 46.892px;
+  top: 47.186px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_110_ch {
+  fill: url(#Pfad_110_ch);
+}
+.Pfad_110_ch {
+  overflow: visible;
+  position: absolute;
+  width: 130.393px;
+  height: 443.534px;
+  left: 77.755px;
+  top: 47.186px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_111_cj {
+  fill: url(#Pfad_111_cj);
+}
+.Pfad_111_cj {
+  overflow: visible;
+  position: absolute;
+  width: 145.189px;
+  height: 238.565px;
+  left: 0px;
+  top: 250.092px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_112_cl {
+  fill: url(#Pfad_112_cl);
+}
+.Pfad_112_cl {
+  overflow: visible;
+  position: absolute;
+  width: 148.829px;
+  height: 238.565px;
+  left: 4.024px;
+  top: 250.092px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_113_cn {
+  fill: url(#Pfad_113_cn);
+}
+.Pfad_113_cn {
+  overflow: visible;
+  position: absolute;
+  width: 130.363px;
+  height: 250.28px;
+  left: 215.498px;
+  top: 237.513px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_114_cp {
+  fill: url(#Pfad_114_cp);
+}
+.Pfad_114_cp {
+  overflow: visible;
+  position: absolute;
+  width: 131.166px;
+  height: 250.28px;
+  left: 205.011px;
+  top: 237.513px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Gruppe_1 {
+  position: absolute;
+  width: 20px;
+  height: 13px;
+  left: 18px;
+  top: 19px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Men_.html;
+  cursor: pointer;
+}
+#Rechteck_1447 {
+  fill: rgba(0,0,0,1);
+}
+.Rechteck_1447 {
+  position: absolute;
+  overflow: visible;
+  width: 20px;
+  height: 3px;
+  left: 0px;
+  top: 0px;
+}
+#Rechteck_1448 {
+  fill: rgba(0,0,0,1);
+}
+.Rechteck_1448 {
+  position: absolute;
+  overflow: visible;
+  width: 20px;
+  height: 3px;
+  left: 0px;
+  top: 5px;
+}
+#Rechteck_1449 {
+  fill: rgba(0,0,0,1);
+}
+.Rechteck_1449 {
+  position: absolute;
+  overflow: visible;
+  width: 20px;
+  height: 3px;
+  left: 0px;
+  top: 10px;
+}
+#Warning {
+  transform: matrix(1,0,0,1,366,19) rotate(180deg);
+  transform-origin: center;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Pfad_35 {
+  fill: rgba(0,0,0,1);
+}
+.Pfad_35 {
+  overflow: visible;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Large_Body {
+  position: absolute;
+  width: 327px;
+  height: 164px;
+  left: 49px;
+  top: 70px;
+  overflow: visible;
+}
+#Dies_war_schon_das_dritte_Mal_ {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  height: 164px;
+  line-height: 19.5px;
+  margin-top: -2.25px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  color: rgba(0,0,0,1);
+}
+#Gruppe_603 {
+  position: absolute;
+  width: 355px;
+  height: 123px;
+  left: 30px;
+  top: 812px;
+  overflow: visible;
+}
+#Large_Body_cz {
+  position: absolute;
+  width: 327px;
+  height: 94px;
+  left: 19px;
+  top: 19px;
+  overflow: visible;
+}
+#Vielleicht_braucht_es_wie_bei_ {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  height: 94px;
+  line-height: 23px;
+  margin-top: -4px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: rgba(0,0,0,1);
+}
+#Rechteck_1454_c {
+  fill: transparent;
+  stroke: rgba(255,255,255,1);
+  stroke-width: 3px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Rechteck_1454_c {
+  position: absolute;
+  overflow: visible;
+  width: 355px;
+  height: 123px;
+  left: 0px;
+  top: 0px;
+}
+#Button_Large {
+  position: absolute;
+  width: 327px;
+  height: 48px;
+  left: 44px;
+  top: 956px;
+  overflow: visible;
+}
+#Rechteck_119 {
+  fill: rgba(255,255,255,1);
+}
+.Rechteck_119 {
+  position: absolute;
+  overflow: visible;
+  width: 327px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+}
+#Hier_sind_unsere_Neuanfnge {
+  left: 46px;
+  top: 15px;
+  position: absolute;
+  overflow: visible;
+  width: 237px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(128,16,16,1);
+  text-transform: uppercase;
+}
+#Button_Large_c {
+  position: absolute;
+  width: 284px;
+  height: 48px;
+  left: 65px;
+  top: 1069px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Letzte_Seite.html;
+  cursor: pointer;
+}
+#Rechteck_119_c {
+  fill: rgba(58,172,80,1);
+}
+.Rechteck_119_c {
+  position: absolute;
+  overflow: visible;
+  width: 284px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+}
+#Frohe_Ostern {
+  left: 86px;
+  top: 15px;
+  position: absolute;
+  overflow: visible;
+  width: 113px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(255,255,255,1);
+  text-transform: uppercase;
+}
+#Forward_arrow {
+  transform: matrix(1,0,0,1,192.5,639.5) rotate(90deg);
+  transform-origin: center;
+  position: absolute;
+  width: 21px;
+  height: 28px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Pfad_10 {
+  fill: rgba(0,0,0,1);
+  stroke: rgba(0,0,0,1);
+  stroke-width: 1px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Pfad_10 {
+  overflow: visible;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 7px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Neue_Gemeinschaft {
+  left: 49px;
+  top: 16.5px;
+  position: absolute;
+  overflow: visible;
+  width: 205px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(0,0,0,1);
+  text-transform: uppercase;
+}
+#Large_Body_db {
+  position: absolute;
+  width: 327px;
+  height: 51px;
+  left: 44px;
+  top: 561px;
+  overflow: visible;
+}
+#Was_ist_fr_dich_ein_Neuanfang_ {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  height: 51px;
+  line-height: 23px;
+  margin-top: -4px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: rgba(0,0,0,1);
+}
+#Gruppe_418 {
+  position: absolute;
+  width: 369px;
+  height: 346.768px;
+  left: 18px;
+  top: 152px;
+  overflow: visible;
+}
+#Pfad_2986_df {
+  fill: url(#Pfad_2986_df);
+}
+.Pfad_2986_df {
+  overflow: visible;
+  position: absolute;
+  width: 132.151px;
+  height: 209.929px;
+  left: 29.25px;
+  top: 0.008px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_2987_dh {
+  fill: url(#Pfad_2987_dh);
+}
+.Pfad_2987_dh {
+  overflow: visible;
+  position: absolute;
+  width: 157.99px;
+  height: 187.793px;
+  left: 211.01px;
+  top: 30.262px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_2988_dj {
+  fill: url(#Pfad_2988_dj);
+}
+.Pfad_2988_dj {
+  overflow: visible;
+  position: absolute;
+  width: 158.146px;
+  height: 187.293px;
+  left: 6.915px;
+  top: 30.763px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_2989_dl {
+  fill: url(#Pfad_2989_dl);
+}
+.Pfad_2989_dl {
+  overflow: visible;
+  position: absolute;
+  width: 60.175px;
+  height: 125.736px;
+  left: 165.396px;
+  top: 221.032px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Gruppe_409 {
+  position: absolute;
+  width: 75.741px;
+  height: 234.058px;
+  left: 150.135px;
+  top: 89.859px;
+  overflow: visible;
+}
+#Gruppe_408 {
+  position: absolute;
+  width: 75.741px;
+  height: 234.058px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Gruppe_407 {
+  position: absolute;
+  width: 75.741px;
+  height: 234.058px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Pfad_2991_dq {
+  fill: url(#Pfad_2991_dq);
+}
+.Pfad_2991_dq {
+  overflow: visible;
+  position: absolute;
+  width: 35.948px;
+  height: 102.177px;
+  left: 189.985px;
+  top: 205.86px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Gruppe_417 {
+  position: absolute;
+  width: 55.397px;
+  height: 76.705px;
+  left: 150.597px;
+  top: 46.696px;
+  overflow: visible;
+}
+#Gruppe_416 {
+  position: absolute;
+  width: 55.397px;
+  height: 76.705px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Gruppe_415 {
+  position: absolute;
+  width: 55.397px;
+  height: 76.704px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Pfad_2993 {
+  fill: rgba(213,220,206,1);
+}
+.Pfad_2993 {
+  overflow: visible;
+  position: absolute;
+  width: 0.365px;
+  height: 0.344px;
+  left: 0px;
+  top: 157.057px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_2994_dw {
+  fill: url(#Pfad_2994_dw);
+}
+.Pfad_2994_dw {
+  overflow: visible;
+  position: absolute;
+  width: 132.155px;
+  height: 209.897px;
+  left: 214.656px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Ellipse_3 {
+  fill: rgba(0,0,0,1);
+}
+.Ellipse_3 {
+  position: absolute;
+  overflow: visible;
+  width: 6.108px;
+  height: 6.108px;
+  left: 176.584px;
+  top: 72.238px;
+}
+#Gruppe_427 {
+  position: absolute;
+  width: 130px;
+  height: 155.735px;
+  left: 38px;
+  top: 355px;
+  overflow: visible;
+}
+#Pfad_2995_d {
+  fill: url(#Pfad_2995_d);
+}
+.Pfad_2995_d {
+  overflow: visible;
+  position: absolute;
+  width: 48.635px;
+  height: 100.122px;
+  left: 81.365px;
+  top: 55.613px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_2996_d {
+  fill: url(#Pfad_2996_d);
+}
+.Pfad_2996_d {
+  overflow: visible;
+  position: absolute;
+  width: 84.958px;
+  height: 78.475px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Gruppe_426 {
+  position: absolute;
+  width: 65.628px;
+  height: 21.763px;
+  left: 7.282px;
+  top: 60.504px;
+  overflow: visible;
+}
+#Gruppe_425 {
+  position: absolute;
+  width: 65.628px;
+  height: 21.763px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Gruppe_424 {
+  position: absolute;
+  width: 65.628px;
+  height: 21.763px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Pfad_2998_d {
+  fill: url(#Pfad_2998_d);
+}
+.Pfad_2998_d {
+  overflow: visible;
+  position: absolute;
+  width: 36.497px;
+  height: 21.988px;
+  left: 26.526px;
+  top: 76.26px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Gruppe_428 {
+  position: absolute;
+  width: 130.784px;
+  height: 155.735px;
+  left: 254.216px;
+  top: 355px;
+  overflow: visible;
+}
+#Pfad_2995_eb {
+  fill: url(#Pfad_2995_eb);
+}
+.Pfad_2995_eb {
+  overflow: visible;
+  position: absolute;
+  width: 48.635px;
+  height: 100.122px;
+  left: 0px;
+  top: 55.613px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_2996_ec {
+  fill: url(#Pfad_2996_ec);
+}
+.Pfad_2996_ec {
+  overflow: visible;
+  position: absolute;
+  width: 84.958px;
+  height: 78.475px;
+  left: 45.825px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Gruppe_426_ed {
+  position: absolute;
+  width: 65.628px;
+  height: 21.763px;
+  left: 57.874px;
+  top: 60.504px;
+  overflow: visible;
+}
+#Gruppe_425_ee {
+  position: absolute;
+  width: 65.628px;
+  height: 21.763px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Gruppe_424_ef {
+  position: absolute;
+  width: 65.628px;
+  height: 21.763px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Pfad_2998_eh {
+  fill: url(#Pfad_2998_eh);
+}
+.Pfad_2998_eh {
+  overflow: visible;
+  position: absolute;
+  width: 36.497px;
+  height: 21.988px;
+  left: 67.539px;
+  top: 76.26px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_2999_ej {
+  fill: url(#Pfad_2999_ej);
+}
+.Pfad_2999_ej {
+  overflow: visible;
+  position: absolute;
+  width: 14.787px;
+  height: 36.52px;
+  transform: matrix(1,0,0,1,189.5739,511.9854) rotate(150deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
+}
+#Pfad_3000_el {
+  fill: url(#Pfad_3000_el);
+}
+.Pfad_3000_el {
+  overflow: visible;
+  position: absolute;
+  width: 15.8px;
+  height: 36.52px;
+  transform: matrix(1,0,0,1,205.1663,512.4091) rotate(208deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
+}

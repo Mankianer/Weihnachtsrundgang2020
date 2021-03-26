@@ -22,6 +22,8 @@ import {FaqComponent} from './faq/faq.component';
 import {LandingPage2Component} from './landing-page/landing-page2.component';
 import {Station2v1Component} from './stations/station2/station2v1.component';
 import {Station3v1Component} from './stations/station3/station3v1.component';
+import {Station7v1Component} from './stations/station7/station7v1.component';
+import {Station8v1Component} from './stations/station8/station8v1.component';
 
 
 @NgModule({
@@ -45,7 +47,9 @@ import {Station3v1Component} from './stations/station3/station3v1.component';
       {path: 'station/5', component: Station5Component, canActivate: [StationguardGuard]},
       {path: 'station/6', component: Station6Component, canActivate: [StationguardGuard]},
       {path: 'station/7', component: Station7Component, canActivate: [StationguardGuard]},
+      {path: 'station/7/1', component: Station7v1Component, canActivate: [StationguardGuard]},
       {path: 'station/8', component: Station8Component, canActivate: [StationguardGuard]},
+      {path: 'station/8/1', component: Station8v1Component, canActivate: [StationguardGuard]},
       {path: 'visitors', component: VisitorCounterComponent},
       {path: 'dev', component: DevComponent},
       {path: 'map', component: MapComponent},

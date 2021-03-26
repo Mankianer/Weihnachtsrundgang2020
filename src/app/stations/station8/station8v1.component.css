@@ -1,0 +1,250 @@
+.hintergrund {
+  width: 100%;
+  min-width: 414px;
+  height: 800px;
+}
+.mediaViewInfo {
+  --web-view-name: Letzte Seite;
+  --web-view-id: Letzte_Seite;
+  --web-scale-to-fit: true;
+  --web-scale-to-fit-type: width;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+:root {
+  --web-view-ids: Letzte_Seite;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+#Letzte_Seite {
+  position: absolute;
+  width: 414px;
+  height: 736px;
+  background-color: rgba(255,255,255,1);
+  --web-view-name: Letzte Seite;
+  --web-view-id: Letzte_Seite;
+  --web-scale-to-fit: true;
+  --web-scale-to-fit-type: width;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+#Pfad_2 {
+  fill: rgba(242,221,105,1);
+}
+.Pfad_2 {
+  overflow: visible;
+  position: absolute;
+  width: 146.426px;
+  height: 387.316px;
+  left: 300.282px;
+  top: -22.07px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_1 {
+  fill: rgba(237,168,58,1);
+}
+.Pfad_1 {
+  overflow: visible;
+  position: absolute;
+  width: 430.596px;
+  height: 356.443px;
+  left: -9.04px;
+  top: -11.987px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Button_Large {
+  position: absolute;
+  width: 327px;
+  height: 48px;
+  left: 44px;
+  top: 602px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Startseite_01.html;
+  cursor: pointer;
+}
+#Rechteck_119 {
+  fill: rgba(58,172,80,1);
+}
+.Rechteck_119 {
+  position: absolute;
+  overflow: visible;
+  width: 327px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+}
+#Zum_Anfang {
+  left: 114px;
+  top: 14px;
+  position: absolute;
+  overflow: visible;
+  width: 101px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  color: rgba(255,255,255,1);
+  text-transform: uppercase;
+}
+#Large_Body {
+  position: absolute;
+  width: 327px;
+  height: 193px;
+  left: 44px;
+  top: 376px;
+  overflow: visible;
+}
+#Jesus_ist_auferstanden_er_ist_ {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  height: 52px;
+  line-height: 23px;
+  margin-top: -4px;
+  text-align: center;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  color: rgba(0,0,0,1);
+  text-transform: uppercase;
+}
+#In_allen_Einschrnkungen_wnsche {
+  left: 0px;
+  top: 141px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  height: 52px;
+  line-height: 23px;
+  margin-top: -4px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: rgba(0,0,0,1);
+}
+#Title {
+  position: absolute;
+  width: 260px;
+  height: 68px;
+  left: 45px;
+  top: 65px;
+  overflow: visible;
+}
+#Ostern_um_den__Phoenix-See {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 261px;
+  white-space: nowrap;
+  line-height: 35px;
+  margin-top: -2.5px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(255,255,255,1);
+  text-transform: uppercase;
+}
+#Gruppe_1 {
+  position: absolute;
+  width: 20px;
+  height: 13px;
+  left: 18px;
+  top: 19px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Men_.html;
+  cursor: pointer;
+}
+#Rechteck_1447 {
+  fill: rgba(255,255,255,1);
+}
+.Rechteck_1447 {
+  position: absolute;
+  overflow: visible;
+  width: 20px;
+  height: 3px;
+  left: 0px;
+  top: 0px;
+}
+#Rechteck_1448 {
+  fill: rgba(255,255,255,1);
+}
+.Rechteck_1448 {
+  position: absolute;
+  overflow: visible;
+  width: 20px;
+  height: 3px;
+  left: 0px;
+  top: 5px;
+}
+#Rechteck_1449 {
+  fill: rgba(255,255,255,1);
+}
+.Rechteck_1449 {
+  position: absolute;
+  overflow: visible;
+  width: 20px;
+  height: 3px;
+  left: 0px;
+  top: 10px;
+}
+#Presented_by_Ev_und_Kath_Jugen {
+  left: 44.5px;
+  top: 663.5px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  white-space: nowrap;
+  line-height: 35px;
+  margin-top: -13px;
+  text-align: center;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 9px;
+  color: rgba(0,0,0,1);
+}
+#Rechteck_1454 {
+  fill: transparent;
+  stroke: rgba(237,168,58,1);
+  stroke-width: 3px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Rechteck_1454 {
+  position: absolute;
+  overflow: visible;
+  width: 355px;
+  height: 76px;
+  left: 30px;
+  top: 502px;
+}

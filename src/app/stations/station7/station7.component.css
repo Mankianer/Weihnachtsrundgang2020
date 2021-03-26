@@ -1,0 +1,389 @@
+.hintergrund {
+  background-image: linear-gradient(#77b8f4, #bfd8f1 70%, #f0cdc5);
+  width: 100%;
+  min-width: 414px;
+  height: 1300px;
+}
+
+.mediaViewInfo {
+  --web-view-name: Station 07_01;
+  --web-view-id: Station_07_01;
+  --web-scale-to-fit: true;
+  --web-scale-to-fit-type: width;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+:root {
+  --web-view-ids: Station_07_01;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+#Station_07_01 {
+  position: absolute;
+  width: 414px;
+  height: 1262px;
+  background-color: rgba(255,255,255,1);
+  --web-view-name: Station 07_01;
+  --web-view-id: Station_07_01;
+  --web-scale-to-fit: true;
+  --web-scale-to-fit-type: width;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+#Rechteck_1454_y {
+  fill: url(#Rechteck_1454_y);
+}
+.Rechteck_1454_y {
+  position: absolute;
+  overflow: visible;
+  width: 414px;
+  height: 1251px;
+  left: 0px;
+  top: 0px;
+}
+#Gruppe_1 {
+  position: absolute;
+  width: 20px;
+  height: 13px;
+  left: 18px;
+  top: 19px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Men_.html;
+  cursor: pointer;
+}
+#Rechteck_1447 {
+  fill: rgba(0,0,0,1);
+}
+.Rechteck_1447 {
+  position: absolute;
+  overflow: visible;
+  width: 20px;
+  height: 3px;
+  left: 0px;
+  top: 0px;
+}
+#Rechteck_1448 {
+  fill: rgba(0,0,0,1);
+}
+.Rechteck_1448 {
+  position: absolute;
+  overflow: visible;
+  width: 20px;
+  height: 3px;
+  left: 0px;
+  top: 5px;
+}
+#Rechteck_1449 {
+  fill: rgba(0,0,0,1);
+}
+.Rechteck_1449 {
+  position: absolute;
+  overflow: visible;
+  width: 20px;
+  height: 3px;
+  left: 0px;
+  top: 10px;
+}
+#Warning {
+  transform: matrix(1,0,0,1,366,19) rotate(180deg);
+  transform-origin: center;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Pfad_35 {
+  fill: rgba(0,0,0,1);
+}
+.Pfad_35 {
+  overflow: visible;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Large_Body {
+  position: absolute;
+  width: 327px;
+  height: 164px;
+  left: 49px;
+  top: 70px;
+  overflow: visible;
+}
+#Jesus_sagte_Kommt_her_und_esst {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  height: 164px;
+  line-height: 19.5px;
+  margin-top: -2.25px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  color: rgba(0,0,0,1);
+}
+#Gruppe_17 {
+  position: absolute;
+  width: 327px;
+  height: 48px;
+  left: 44px;
+  top: 948px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Station_07_02.html;
+  cursor: pointer;
+}
+#Button_Large {
+  position: absolute;
+  width: 327px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Rechteck_119 {
+  fill: rgba(255,255,255,1);
+}
+.Rechteck_119 {
+  position: absolute;
+  overflow: visible;
+  width: 327px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+}
+#Schmeckt_und_seht {
+  left: 83px;
+  top: 16px;
+  position: absolute;
+  overflow: visible;
+  width: 161px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(0,0,0,1);
+  text-transform: uppercase;
+}
+#Forward_arrow {
+  transform: matrix(1,0,0,1,192.5,639.5) rotate(90deg);
+  transform-origin: center;
+  position: absolute;
+  width: 21px;
+  height: 28px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Pfad_10 {
+  fill: rgba(0,0,0,1);
+  stroke: rgba(0,0,0,1);
+  stroke-width: 1px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Pfad_10 {
+  overflow: visible;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 7px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Immer_wieder_neu {
+  left: 49px;
+  top: 16.5px;
+  position: absolute;
+  overflow: visible;
+  width: 205px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(0,0,0,1);
+  text-transform: uppercase;
+}
+#Large_Body_be {
+  position: absolute;
+  width: 327px;
+  height: 103px;
+  left: 44px;
+  top: 561px;
+  overflow: visible;
+}
+#Wenn_Menschen_etwas_teilen_ent {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  height: 103px;
+  line-height: 23px;
+  margin-top: -4px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: rgba(0,0,0,1);
+}
+#Gruppe_602 {
+  position: absolute;
+  width: 355px;
+  height: 81px;
+  left: 30px;
+  top: 843px;
+  overflow: visible;
+}
+#Rechteck_1454_bh {
+  fill: transparent;
+  stroke: rgba(255,255,255,1);
+  stroke-width: 3px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Rechteck_1454_bh {
+  position: absolute;
+  overflow: visible;
+  width: 355px;
+  height: 81px;
+  left: 0px;
+  top: 0px;
+}
+#Large_Body_bi {
+  position: absolute;
+  width: 327px;
+  height: 43px;
+  left: 19px;
+  top: 21px;
+  overflow: visible;
+}
+#Was_macht_Dich_lebendig_Was_st {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 328px;
+  height: 43px;
+  line-height: 23px;
+  margin-top: -4px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: rgba(0,0,0,1);
+}
+#Gruppe_601 {
+  position: absolute;
+  width: 535.404px;
+  height: 282.755px;
+  left: -36px;
+  top: 168.197px;
+  overflow: visible;
+}
+#Pfad_2983 {
+  fill: rgba(0,0,0,1);
+}
+.Pfad_2983 {
+  overflow: visible;
+  position: absolute;
+  width: 278.451px;
+  height: 90.513px;
+  left: 0px;
+  top: 192.242px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_2984 {
+  fill: rgba(0,0,0,1);
+}
+.Pfad_2984 {
+  overflow: visible;
+  position: absolute;
+  width: 266.382px;
+  height: 137.438px;
+  transform: translate(36px, -760.977px) matrix(1,0,0,1,220.0109,830.5132) rotate(-40deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
+}
+#Pfad_2985 {
+  opacity: 0.597;
+  fill: rgba(0,0,0,1);
+}
+.Pfad_2985 {
+  overflow: visible;
+  position: absolute;
+  width: 215.529px;
+  height: 81.269px;
+  transform: translate(36px, -760.977px) matrix(1,0,0,1,153,858.5972) rotate(-49deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
+}
+#Gruppe_600 {
+  position: absolute;
+  width: 432.496px;
+  height: 157.461px;
+  left: -9.248px;
+  top: 1143.048px;
+  overflow: visible;
+}
+#Pfad_4249 {
+  fill: rgba(0,0,0,1);
+}
+.Pfad_4249 {
+  overflow: visible;
+  position: absolute;
+  width: 432.496px;
+  height: 157.461px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Pfad_4250 {
+  fill: rgba(255,255,255,1);
+}
+.Pfad_4250 {
+  overflow: visible;
+  position: absolute;
+  width: 382.069px;
+  height: 90.837px;
+  left: 25.771px;
+  top: 62.909px;
+  transform: matrix(1,0,0,1,0,0);
+}
