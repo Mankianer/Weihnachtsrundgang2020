@@ -51,6 +51,7 @@ import {InfoButtonComponent, InfoDialog} from './info-button/info-button.compone
 import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 import {Station7v1Component} from './stations/station7/station7v1.component';
 import {Station8v1Component} from './stations/station8/station8v1.component';
+import {Station1v1Component} from './stations/station1/station1v1.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +85,8 @@ import {Station8v1Component} from './stations/station8/station8v1.component';
     InfoButtonComponent,
     InfoDialog,
     Station7v1Component,
-    Station8v1Component
+    Station8v1Component,
+    Station1v1Component
   ],
   imports: [
     BrowserModule,
