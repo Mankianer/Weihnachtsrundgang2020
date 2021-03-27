@@ -25,6 +25,8 @@ import {Station3v1Component} from './stations/station3/station3v1.component';
 import {Station7v1Component} from './stations/station7/station7v1.component';
 import {Station8v1Component} from './stations/station8/station8v1.component';
 import {Station1v1Component} from './stations/station1/station1v1.component';
+import {Station4v2Component} from './stations/station4/station4v2.component';
+import {Station4v1Component} from './stations/station4/station4v1.component';
 
 
 @NgModule({
@@ -46,6 +48,8 @@ import {Station1v1Component} from './stations/station1/station1v1.component';
       {path: 'station/3', component: Station3Component, canActivate: [StationguardGuard]},
       {path: 'station/3/1', component: Station3v1Component, canActivate: [StationguardGuard]},
       {path: 'station/4', component: Station4Component, canActivate: [StationguardGuard]},
+      {path: 'station/4/1', component: Station4v1Component, canActivate: [StationguardGuard]},
+      {path: 'station/4/2', component: Station4v2Component, canActivate: [StationguardGuard]},
       {path: 'station/5', component: Station5Component, canActivate: [StationguardGuard]},
       {path: 'station/6', component: Station6Component, canActivate: [StationguardGuard]},
       {path: 'station/7', component: Station7Component, canActivate: [StationguardGuard]},

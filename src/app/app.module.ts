@@ -52,6 +52,8 @@ import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 import {Station7v1Component} from './stations/station7/station7v1.component';
 import {Station8v1Component} from './stations/station8/station8v1.component';
 import {Station1v1Component} from './stations/station1/station1v1.component';
+import {Station4v1Component} from './stations/station4/station4v1.component';
+import {Station4v2Component} from './stations/station4/station4v2.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +88,9 @@ import {Station1v1Component} from './stations/station1/station1v1.component';
     InfoDialog,
     Station7v1Component,
     Station8v1Component,
-    Station1v1Component
+    Station1v1Component,
+    Station4v1Component,
+    Station4v2Component,
   ],
   imports: [
     BrowserModule,
