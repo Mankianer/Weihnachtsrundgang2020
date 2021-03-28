@@ -5,12 +5,12 @@ import {QrCounterServiceService} from '../../services/qr-counter-service.service
   selector: 'app-station4v1',
   template: `
     <div class="hintergrund" style="height: 100%">
-      <div style="margin-top: 35px; margin-left: 25px; margin-right: 25px;">
-        <p>Hast du schon länger einen Gedanken, den du aber doch immer wieder verwirfst? Weil du dich nicht traust oder
-        immer was dazwischenkommt?</p>
-        <p>Hast du Gewohnheiten, die dich nicht weiterbringen?</p>
-        <p>Was wolltest du stattdessen schon immer einmal ausprobieren? Nimm es dir jetzt fest vor und setze es um!</p>
-      </div>
+      <ul style="margin-top: 35px; margin-left: 25px; margin-right: 25px;">
+        <li>Hast du schon länger einen Gedanken, den du aber doch immer wieder verwirfst? Weil du dich nicht traust oder
+        immer was dazwischenkommt?</li>
+        <li>Hast du Gewohnheiten, die dich nicht weiterbringen?</li>
+        <li>Was wolltest du stattdessen schon immer einmal ausprobieren? Nimm es dir jetzt fest vor und setze es um!</li>
+      </ul>
     </div>`,
   styleUrls: ['./station4.component.css']
 })
