@@ -66,7 +66,7 @@ export class QrCounterServiceService {
       if (!this.cookieService.check('QR_ID:' + id)) {
         const domain = window.location.hostname;
         this.cookieService.set('QR_ID:' + id, 'X', {path: '/', expires: new Date(2022, 2, 28)});
-        this.http.get('https://api.countapi.xyz/hit/' + domain + '/Station' + (this.lastCounter + 1)).subscribe();
+        this.http.get('https://api.countapi.xyz/hit/' + domain + '/station' + (this.lastCounter + 1)).subscribe();
         this.addCounter();
         this.updateNewStationForReward(true);
       }
