@@ -8,7 +8,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class QrCounterServiceService {
 
-  private QrIds: string[] = ['613', '832', '464', '473', '338', '670', '887', '295'];
+  public QrIds: string[] = ['613', '832', '464', '473', '338', '670', '887', '295'];
   private CookieString = 'QR_Count';
 
   public counter: EventEmitter<number> = new EventEmitter<number>();
@@ -67,6 +67,7 @@ export class QrCounterServiceService {
         const domain = window.location.hostname;
         this.cookieService.set('QR_ID:' + id, 'X', {path: '/', expires: new Date(2022, 2, 28)});
         this.http.get('https://api.countapi.xyz/hit/' + domain + '/station' + (this.lastCounter + 1)).subscribe();
+        this.http.get('https://api.countapi.xyz/hit/' + domain + '/QR-Code' + id).subscribe();
         this.addCounter();
         this.updateNewStationForReward(true);
       }
