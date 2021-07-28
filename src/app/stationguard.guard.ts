@@ -2,6 +2,7 @@ import {Injectable} from '@angular/core';
 import {CanActivate, CanActivateChild, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, Router} from '@angular/router';
 import {Observable} from 'rxjs';
 import {QrCounterServiceService} from './services/qr-counter-service.service';
+import {environment} from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +17,7 @@ export class StationguardGuard implements CanActivate {
     if (route.url[0].path === 'landing'){
       return true;
     }
-    if (!this.qrCounter.isLandingPageViewed()) {
+    if (environment.haveToVisitLandingPage && !this.qrCounter.isLandingPageViewed()) {
       this.router.navigate(['/landing']);
       return false;
     }

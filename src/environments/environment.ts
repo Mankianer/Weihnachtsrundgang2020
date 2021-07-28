@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  viewcounter: false
+  viewcounter: false,
+  haveToVisitLandingPage: false
 };
 
 /*
