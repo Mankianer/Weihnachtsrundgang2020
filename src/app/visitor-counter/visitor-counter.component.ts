@@ -3,6 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {Route} from '@angular/router';
 import {QrCounterServiceService} from '../services/qr-counter-service.service';
 import {Observable} from 'rxjs';
+import {environment} from '../../environments/environment';
 
 @Component({
   selector: 'app-visitor-counter',
@@ -13,6 +14,11 @@ export class VisitorCounterComponent implements OnInit {
 
   public stationCounts: number[] = [1, 2, 3, 4, 5, 6, 7, 8];
   public stationKey = 'station';
+
+  private targetAdresseGet = 'https://api.countapi.xyz/get/';
+  private targetAdresseCreate = 'https://api.countapi.xyz/create?namespace=';
+  private domain = window.location.hostname;
+  environment = environment;
 
   constructor(private http: HttpClient, private qrCounter: QrCounterServiceService) {
   }
@@ -36,10 +42,6 @@ export class VisitorCounterComponent implements OnInit {
     //   });
     // });
   }
-
-  private targetAdresseGet = 'https://api.countapi.xyz/get/';
-  private targetAdresseCreate = 'https://api.countapi.xyz/create?namespace=';
-  private domain = window.location.hostname;
 
   public getCounterByKey(key: string): Observable<any> {
     return this.http.get<any>(this.targetAdresseGet + this.domain + '/' + key);

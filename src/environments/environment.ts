@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  viewcounter: false,
+  enableVisitorCounter: false,
   haveToVisitLandingPage: false
 };
 

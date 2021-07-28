@@ -1,6 +1,7 @@
 import {EventEmitter, Injectable} from '@angular/core';
 import {CookieService} from 'ngx-cookie-service';
 import {HttpClient} from '@angular/common/http';
+import {environment} from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -65,8 +66,10 @@ export class QrCounterServiceService {
       if (!this.cookieService.check('QR_ID:' + id)) {
         const domain = window.location.hostname;
         this.cookieService.set('QR_ID:' + id, 'X', {path: '/', expires: new Date(2022, 2, 28)});
-        this.http.get('https://api.countapi.xyz/hit/' + domain + '/station' + (this.lastCounter + 1)).subscribe();
-        this.http.get('https://api.countapi.xyz/hit/' + domain + '/QR-Code' + id).subscribe();
+        if (environment.enableVisitorCounter) {
+          this.http.get('https://api.countapi.xyz/hit/' + domain + '/station' + (this.lastCounter + 1)).subscribe();
+          this.http.get('https://api.countapi.xyz/hit/' + domain + '/QR-Code' + id).subscribe();
+        }
         this.addCounter();
         this.updateNewStationForReward(true);
       }
