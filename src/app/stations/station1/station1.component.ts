@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {QrCounterServiceService} from '../../services/qr-counter-service.service';
 
 @Component({
@@ -8,10 +8,17 @@ import {QrCounterServiceService} from '../../services/qr-counter-service.service
 })
 export class Station1Component implements OnInit {
 
-  constructor(private qrCounter: QrCounterServiceService) { }
+  hit = false;
+
+  constructor(private qrCounter: QrCounterServiceService) {
+  }
 
   ngOnInit(): void {
     this.qrCounter.setStationViewed('1');
+  }
+
+  ichsitze(): void {
+    this.hit = true;
   }
 
 }
