@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import {CookieService} from 'ngx-cookie-service';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
@@ -13,7 +14,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import {RouterModule} from '@angular/router';
 import { ContentControllerComponent } from './content-controller/content-controller.component';
-import {CookieService} from 'ngx-cookie-service';
 import { RewardComponent } from './reward/reward.component';
 import { Station1Component } from './stations/station1/station1.component';
 import { MapComponent } from './map/map.component';
@@ -24,7 +24,6 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import {MatRippleModule} from '@angular/material/core';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import {NgxAudioPlayerModule} from 'ngx-audio-player';
 import { VisitorCounterComponent } from './visitor-counter/visitor-counter.component';
 import {HttpClientModule} from '@angular/common/http';
 import {MatExpansionModule} from '@angular/material/expansion';
@@ -108,7 +107,6 @@ import {Station4v2Component} from './stations/station4/station4v2.component';
     MatRippleModule,
     MatFormFieldModule,
     MatInputModule,
-    NgxAudioPlayerModule,
     HttpClientModule,
     MatExpansionModule,
     MatCardModule,

@@ -1,6 +1,5 @@
 import {EventEmitter, Injectable} from '@angular/core';
 import {CookieService} from 'ngx-cookie-service';
-import {formatNumber} from '@angular/common';
 import {HttpClient} from '@angular/common/http';
 
 @Injectable({
