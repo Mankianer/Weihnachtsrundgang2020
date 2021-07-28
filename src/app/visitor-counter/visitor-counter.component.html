@@ -2,7 +2,7 @@
 <div *ngFor="let c of this.stationCounts; let i = index">
   <div style="display: flex; width: 100%; margin-top: 15px">
     <h2 style="margin-right: 20px">Station: {{i + 1}}</h2>
-    <h3 style="margin-right: 20px">{{c}}</h3>
+    <h3 style="margin-right: 20px">{{ (this.getCounterByKey(this.stationKey + i))}}</h3>
     <mat-expansion-panel>
       <mat-expansion-panel-header>Löschen?</mat-expansion-panel-header>
       <mat-form-field>

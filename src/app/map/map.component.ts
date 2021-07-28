@@ -10,6 +10,8 @@ import Feature from 'ol/Feature';
 import Point from 'ol/geom/Point';
 import Icon from 'ol/style/Icon';
 import Style from 'ol/style/Style';
+import {Geometry} from 'ol/geom';
+import VectorSourceType from 'ol/source/Vector';
 
 @Component({
   selector: 'app-map',
@@ -22,7 +24,7 @@ export class MapComponent implements OnInit {
   }
 
   private map: Map;
-  private vectorlayer: VectorLayer;
+  private vectorlayer: VectorLayer<VectorSourceType<Geometry>>;
 
   private ownPos: Feature<Point>;
 
@@ -72,7 +74,7 @@ export class MapComponent implements OnInit {
     }
   }
 
-  public setPos(lonLan: number[]): Feature {
+  public setPos(lonLan: number[]): Feature<Point> {
     if (this.ownPos) {
       this.vectorlayer.getSource().removeFeature(this.ownPos);
     }
@@ -82,7 +84,7 @@ export class MapComponent implements OnInit {
     return this.ownPos;
   }
 
-  public addPoint(lonLan: number[]): Feature {
+  public addPoint(lonLan: number[]): Feature<Point> {
     const feature = new Feature<Point>(new Point(olProj.fromLonLat(lonLan)));
     feature.setStyle(new Style({image: new Icon({src: 'assets/baseline_qr_code_scanner_black_18dp.png'})}));
     this.vectorlayer.getSource().addFeature(feature);
