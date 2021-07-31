@@ -18,7 +18,7 @@
 #Startseite_01 {
   position: absolute;
   width: 414px;
-  height: 736px;
+  height: 900px;
   background-color: rgba(255,255,255,1);
   overflow: hidden;
   --web-view-name: Startseite 01;
@@ -43,7 +43,7 @@
   width: 327px;
   height: 48px;
   left: 44px;
-  top: 555px;
+  top: 745px;
   overflow: visible;
   --web-animation: fadein 0.3s ease-out;
   --web-action-type: page;
@@ -80,7 +80,7 @@
   width: 228px;
   height: 33px;
   left: 93px;
-  top: 618px;
+  top: 805px;
   overflow: visible;
 }
 #Rechteck_119_ {
@@ -113,6 +113,7 @@
   fill: rgba(242,221,105,1);
 }
 .Pfad_2 {
+  margin-top: -10px;
   /*overflow: visible;*/
   position: absolute;
   width: 146.426px;
@@ -125,6 +126,8 @@
   fill: rgba(237,168,58,1);
 }
 .Pfad_1 {
+  margin-top: -15px;
+  margin-left: -10px;
   /*overflow: visible;*/
   position: absolute;
   width: 430.596px;
@@ -151,7 +154,7 @@
   width: 328px;
   height: 157px;
   line-height: 22px;
-  margin-top: -3.5px;
+  margin-top: -60px;
   text-align: left;
   font-family: Arial;
   font-style: normal;
@@ -181,7 +184,7 @@
   font-family: Arial;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 24px;
   color: rgba(255,255,255,1);
   text-transform: uppercase;
 }
