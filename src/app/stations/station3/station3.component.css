@@ -25,7 +25,7 @@
 #Station_03 {
   position: absolute;
   width: 414px;
-  height: 1472px;
+  height: 600px;
   background-color: rgba(255,255,255,1);
   --web-view-name: Station 03;
   --web-view-id: Station_03;
@@ -51,7 +51,7 @@
   position: absolute;
   overflow: visible;
   width: 414px;
-  height: 1472px;
+  height: 600px;
   left: 0px;
   top: 0px;
 }
