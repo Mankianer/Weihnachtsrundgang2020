@@ -12,7 +12,7 @@ import {QrCounterServiceService} from '../services/qr-counter-service.service';
 })
 export class NavigationComponent {
 
-  public stationSubtitels = ['NEU ANFANGEN', 'WIEDER AUFSTEHEN', 'NEUER MORGEN', 'NEUE PERSPEKTIVE', 'NEUER MUT', 'NEUE MOTIVATION',
+  public stationSubtitels = ['Fragen an deine Sinne', 'ALI', 'ABC- des Wohlbefindens', 'NEUE PERSPEKTIVE', 'NEUER MUT', 'NEUE MOTIVATION',
     'IMMER WIEDER NEU', 'NEUE GEMEINSCHAFT'];
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
