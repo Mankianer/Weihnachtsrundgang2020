@@ -38,7 +38,7 @@ import {Station4v1Component} from './stations/station4/station4v1.component';
       {path: 'reward', component: RewardComponent},
       {path: 'erklaerung', component: ErklaerungComponent},
       {path: 'station', component: ContentControllerComponent},
-      {path: 'station/1', component: Station1Component, canActivate: [StationguardGuard]},
+      {path: 'station/1', component: LandingPageComponent, canActivate: [StationguardGuard]},
       {path: 'station/2', component: Station2Component, canActivate: [StationguardGuard]},
       {path: 'station/2/1', component: Station2v1Component, canActivate: [StationguardGuard]},
       {path: 'station/3', component: Station3Component, canActivate: [StationguardGuard]},

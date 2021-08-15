@@ -53,6 +53,7 @@ import {Station8v1Component} from './stations/station8/station8v1.component';
 import {Station1v1Component} from './stations/station1/station1v1.component';
 import {Station4v1Component} from './stations/station4/station4v1.component';
 import {Station4v2Component} from './stations/station4/station4v2.component';
+import {NgxAudioPlayerModule} from 'ngx-audio-player';
 
 @NgModule({
   declarations: [
@@ -110,7 +111,8 @@ import {Station4v2Component} from './stations/station4/station4v2.component';
     HttpClientModule,
     MatExpansionModule,
     MatCardModule,
-    MatDialogModule
+    MatDialogModule,
+    NgxAudioPlayerModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]
