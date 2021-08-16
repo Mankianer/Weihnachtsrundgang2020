@@ -13,7 +13,8 @@ export class LandingPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // this.qrCounter.setLandingPageViewed();
+    this.qrCounter.setLandingPageViewed();
+    this.qrCounter.setStationViewed('2');
   }
 
   public reset(): void {
